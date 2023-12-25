@@ -18,17 +18,25 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:support@snapsec.co"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://dashboard.snapsec.com"
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "Attack Surface Management",
+      "url": "asm"
+    },
+     {
+      "name": "Vulnerability Management",
+      "url": "vm"
+    },
+     {
+      "name": "Employee Training Management",
+      "url": "etm"
     }
   ],
   "anchors": [
