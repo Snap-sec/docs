@@ -37,19 +37,19 @@
   ],
   "anchors": [
     {
-      "name": "Our Services",
+      "name": "Documentation",
       "icon": "book-open-cover",
       "url": "https://mintlify.com/docs"
     },
     {
-      "name": "Blog",
+      "name": "Contact Us",
       "icon": "slack",
-      "url": "https://snapsec.co/blog"
+      "url": "https://snapsec.co/contact-us.html"
     },
     {
-      "name": "Contact Us",
+      "name": "Blog",
       "icon": "newspaper",
-      "url": "https://snapsec.co/contact-us.html"
+      "url": "https://snapsec.co/blog"
     }
   ],
   "navigation": [
@@ -60,8 +60,19 @@
     {
       "group": "Our Products",
       "pages": ["products/asm/index","products/csm/index"]
+    },
+    {
+      "group": "API Documentation",
+      "pages": ["api-reference/introduction"]
+    },
+    {
+      "group": "Endpoint Examples",
+      "pages": [
+        "api-reference/endpoint/get",
+        "api-reference/endpoint/create",
+        "api-reference/endpoint/delete"
+      ]
     }
-    
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/snap_sec",
