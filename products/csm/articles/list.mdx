@@ -1,0 +1,146 @@
+---
+title: 'Vulnerability Management - List'
+description: "The Vulnerability List page consolidates all vulnerabilities from various assessments in one central location. It offers a comprehensive view, streamlining the identification and management of security issues for efficient response and mitigation."
+---
+
+<img
+  className="hidden dark:block"
+  src="/images/d1.png"
+  alt="Main Dashboard"
+/>
+
+
+## Key Topics
+<CardGroup cols={2}>
+     <Card title="Introduction" icon="hand" href="#">
+   
+  </Card>
+  <Card title="Unified Vulnerability Repository" icon="arrows-to-circle" href="#organization-overview-graph">
+    
+  </Card>
+  <Card title="Vulnerability Categorization" icon="layer-group" href="#no-vulnerabilities-in-each-state">
+   
+  </Card>
+  <Card title="Status and Severity Tracking" icon="chart-line" href="#top-5-vulnerabilities">
+    
+  </Card>
+  <Card title="Vulnerability Search Feature" icon="searchengin" href="#severity-classification-and-aggregated-cvss-score">
+   
+  </Card>
+
+   <Card title="Sorting and Filtering Capabilities" icon="arrow-up-z-a" href="#upcoming-security-assessments">
+   
+  </Card>
+</CardGroup>
+
+
+
+
+
+
+## Unified Vulnerability Repository:
+
+SnapSec's Unified Vulnerability Repository functions as a centralized storage hub, consolidating all reported vulnerabilities from diverse sources, including different assessments and automation tools like SnapSec ASM. 
+
+This centralization provides a unified platform for comprehensive analysis and an efficient response to security issues, offering an eagle-eye view of all vulnerabilities reported to this vulnerability Management System, regardless of their origin.
+
+<img
+  className="glass rounded-xl"
+  src="/images/csm/7.png"
+  alt="Main Dashboard"
+/>
+
+
+
+
+**List of table columns in the vulnerability list page:**
+
+| Property        | Description                                         |
+| --------------- | --------------------------------------------------- |
+| **#ID**             | Unique identifier for the reported vulnerability.  |
+| **REPORTED ON**     | Date when the vulnerability was reported.            |
+| **TITLE**           | Brief title or description of the reported issue.   |
+| **ASSESSMENT NAME** | Name of the security assessment where the issue was identified. |
+| **STATUS**          | Current state of the reported vulnerability (e.g., open, resolved, in progress). |
+| **SEVERITY**        | Level of severity assigned to the reported vulnerability (e.g., low, medium, high). |
+| **LAST ACTIVITY**   | Date of the last activity or update related to the reported vulnerability. |
+
+
+
+
+
+
+
+## Vulnerability Categorization:
+
+Vulnerabilities are categorized based on the specific assessments that discovered them. This feature enables a structured approach to vulnerability management, allowing teams to address issues in a targeted manner, focusing on the context of each vulnerability's origin.
+
+<img
+  className="glass rounded-xl"
+  src="/images/csm/8.png"
+  alt="Main Dashboard"
+/>
+
+
+<Tip>When utilizing automated vulnerability scanners to detect vulnerabilities on your assets, you have the option to create a new assessment. By doing so, you can report the identified vulnerabilities to SnapSec's Vulnerability Manager under the newly created assessment, providing a structured categorization for efficient organization and management.</Tip>
+
+
+## Status and Severity Tracking:
+
+SnapSec's tracking system monitors the real-time status (open, resolved, in progress) and severity levels of each vulnerability. This dynamic tracking empowers users to prioritize their efforts based on the urgency and potential impact of each identified security weakness.
+
+
+<img
+  className="glass rounded-xl"
+  src="/images/csm/9.png"
+  alt="Main Dashboard"
+/>
+
+
+
+
+
+
+## Vulnerability Search Feature:
+
+SnapSec's intuitive search feature empowers users to quickly locate specific vulnerabilities within the system. Advanced search functionalities facilitate precise identification, expediting the response to potential security threats by providing a user-friendly and efficient search mechanism.
+
+
+
+<img
+  className="glass rounded-xl"
+  src="/images/csm/10.png"
+  alt="Main Dashboard"
+/>
+
+
+
+
+<Tip>Perform a vulnerability search for specific vulnerabilities, such as XSS (Cross-Site Scripting) and SQLi (SQL Injection), to filter and display all instances of XSS vulnerabilities in the results</Tip>
+
+
+## Sorting and Filtering Capabilities:
+
+SnapSec's user-centric design includes robust sorting and filtering options. Users can easily organize and refine data views based on various criteria, such as severity, date, or assessment origin. This feature ensures a customized and easily navigable approach to vulnerability management, promoting efficient decision-making.
+
+When you click on any assessment within the vulnerability list, the system will filter and display only those vulnerabilities that have been reported under that specific assessment. This functionality allows you to focus on and analyze vulnerabilities associated with a particular assessment, streamlining your view for more targeted and efficient vulnerability management.
+
+
+<img
+  className="glass rounded-xl"
+  src="/images/csm/11.png"
+  alt="Main Dashboard"
+/>
+
+
+Clicking on a specific vulnerability state in the vulnerability list will filter and show only vulnerabilities that fall into the selected state. This feature allows you to narrow down and focus on vulnerabilities based on their current status, facilitating a more detailed examination and management of security issues in the chosen state.
+
+
+<img
+  className="glass rounded-xl"
+  src="/images/csm/12.png"
+  alt="Main Dashboard"
+/>
+
+
+
