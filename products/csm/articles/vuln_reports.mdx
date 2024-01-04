@@ -1,0 +1,129 @@
+---
+title: 'Vulnerability Management - Vulnerability Reports'
+description: "The Vulnerability Report Page in our comprehensive vulnerability management product serves as a centralized hub for detailed insights into identified security issues. Users can quickly understand the each vulnerability through a concise summary, assess its severity with the provided CVSS score, and understand potential impact. 
+The page offers step-by-step instructions to reproduce the vulnerability, aiding in efficient testing and validation. Real-time status updates keep users informed about the current state of remediation efforts, while detailed report logs ensure a thorough audit trail. 
+Additionally, a collaborative space for user comments allows communication and teamwork, allowing for the seamless exchange of insights and updates, thus allowing users to tailor their engagement with each vulnerability, contributing to an agile and effective vulnerability management process."
+---
+
+<img
+  className="hidden dark:block"
+  src="/images/d1.png"
+  alt="Main Dashboard"
+/>
+
+
+## Key Topics
+<CardGroup cols={2}>
+     <Card title="Introduction" icon="hand" href="#">
+   
+  </Card>
+  <Card title="Unified Vulnerability Repository" icon="arrows-to-circle" href="#organization-overview-graph">
+    
+  </Card>
+  <Card title="Vulnerability Categorization" icon="layer-group" href="#no-vulnerabilities-in-each-state">
+   
+  </Card>
+  <Card title="Status and Severity Tracking" icon="chart-line" href="#top-5-vulnerabilities">
+    
+  </Card>
+  <Card title="Vulnerability Search Feature" icon="searchengin" href="#severity-classification-and-aggregated-cvss-score">
+   
+  </Card>
+
+   <Card title="Sorting and Filtering Capabilities" icon="arrow-up-z-a" href="#upcoming-security-assessments">
+   
+  </Card>
+</CardGroup>
+
+
+<img
+  className="glass rounded-xl"
+  src="/images/csm/7.png"
+  alt="Main Dashboard"
+/>
+
+
+
+
+**Main features of Vulnerability Reports page:**
+
+| Property        | Description                                         |
+| --------------- | --------------------------------------------------- |
+| **POC**             | This is proof-of-concept for vulnerability. This include Title, Summary, Reproduction steps and Impact.  |
+| **Status**     | This indicates the current status of the vulnerability.            |
+| **CVSS**           | This represents the severity of the given vulnerability.   |
+| **Report Timeline** | This provides us the overview of all the operation done on vulnerability since being reported |
+| **Attachments**          | This provides a list all the attachments related to the vulnerability. |
+| **Comments**        | Users can comment on the report to provide insights and communicate with other team-members. |
+
+
+
+
+
+
+
+## Vulnerability POC:
+
+This is the main component of vulnerability report. This gives organizations the detailed description of the vulnerability and how to verfiy it. This section includes:
+1. **Title:** This provides a brief and meaningful descriptor of security issue being documented.
+2. **Summary:** This provides a brief yet informative snapshot of the key details related to a specific vulnerability. This allows users to quickly understand the nature of the security issue without delving into the full report.
+3. **Steps to reproduce:** This serves as a guide for others to simulate and understand the circumstances under which the vulnerability occurs. By following the provided steps, the individuals responsible for addressing the issue can confirm its existence, investigate its root cause, and subsequently develop and implement an effective solution or mitigation strategy.
+4. **Impact:** This shows the potential consequences and severity of a security vulnerability or threat.  The impact is a crucial factor in prioritizing and addressing vulnerabilities, as it helps security professionals and organizations focus their resources on mitigating the most critical and damaging security risks.
+
+<Tip> To __Edit__ any of the above section. Click on __"Edit icon"__ next to the specific section </Tip>
+
+## Status:
+
+This shows the current status of vulnerability.It indicates where the vulnerability stands in terms of the overall process of identification, assessment, and remediation.
+Following are the status available  for the reports:
+- In-progress
+- In-Review
+- UnResolved
+- Resolved
+- False Positive
+- Not Appllicable
+- Re-Test
+
+> __Changing the status:__ <br/>i. Hover over to the status.<br/> ii. An edit icon will appear. <br/>iii. Click on the edit icon. From dropdown select the appropriate status you want to change to.
+
+
+## CVSS
+
+CVSS provides a numerical score that reflects the impact of a vulnerability, allowing organizations to prioritize and address security issues based on their criticality. The score is determined by evaluating various factors like exploitability of the vulnerability, the impact on confidentiality, integrity, and availability, as well as other relevant metrics. CVSS scores are presented on a scale from 0 to 10, with higher scores indicating more severe vulnerabilities. <br/>
+
+CSM provides **CVSS score** as well as **CVSS vector string.** <br/>
+**CVSS score:** indicates the numerical impact score<br/>
+**CVSS vector string:** is compressed textual representation of the values used to derive the score
+
+> __Editing the CVSS Score:__ To edit the CVSS score hover over to the CVSS vector string and click on edit.
+
+<Tip>Currently CVSS 3.0 is in place.</Tip>
+
+## Report Timeline
+
+This shows the chronological sequence of events and actions related to the lifecycle of a security vulnerability. Highlighting key events such as identification, status changes, CVSS updates, and any other report modifications. It also tracks user actions, including changes, comments and provides the exact date and time of changes. The timeline provides a clear and structured overview of the key milestones and activities associated with addressing a security vulnerability.
+
+## Attachments
+
+This shows the list of attachments that are related to vulnerability and are embedded in the POC. This helps in better understanding the vulnerability by allowing users to include relevant supplementary materials that provide more context or evidence related to the identified vulnerability.
+The attachments include screenshots, Video file, log files, configuration files etc etc.
+
+CSM allows users to: <br/>
+__i. Upload new attachments__(any-time post submittion of report): Click on Cloud Icon next to attachment section. <br/>
+__ii. Delete:__ Click on delete Icon next to specific attachment you want to delete. <br/>
+__iii. Download:__ Click on "Download icon" next to specific attachment you want to download. 
+
+
+
+## Comments
+
+Another important feature of vulnerability report page is comments feature. This serves as a collaborative space where users can engage in discussions, share observations, propose solutions, or ask questions about the vulnerability. This feature enhances communication and teamwork within the security team, facilitating a transparent exchange of information. It acts as a dynamic, real-time conversation platform associated with a particular vulnerability.
+
+Users can also __include attachments with there comments__.<br/>
+User can do so by clicking on "Attachment" option at the bottom of comment and upload a file.
+
+<Tip> User can mention any other user by simply writing __"@"__ followed by username. CSM will automatically show you the list of users present in organization </Tip> 
+
+
+
+
