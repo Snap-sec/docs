@@ -1,0 +1,323 @@
+---
+title: 'Vulnerability Management - Assessments'
+description: "The Assessments feature in our vulnerability management product offers a centralized platform to effectively manage and monitor all assessments within an organization. Users can conveniently view a comprehensive overview of assessments, including total, finished, scheduled, running, and unconfigured assessments, providing a holistic snapshot of the organization's security posture. The capability to plan and edit assessments ensures flexibility and adaptability to evolving security needs. Each assessment is assigned a unique URL, facilitating the streamlined reporting of vulnerabilities specific to that assessment. Users can delve into detailed analytics for each assessment, gaining valuable insights into the security landscape. Additionally, the feature includes a delete option for assessments that are no longer relevant. This feature streamlines the assessment lifecycle, enhancing overall organizational cybersecurity efforts."
+---
+
+<img
+  className="hidden dark:block"
+  src="/images/d1.png"
+  alt="Main Dashboard"
+/>
+
+
+## Key Topics
+<CardGroup cols={2}>
+     <Card title="Introduction" icon="hand" href="#">
+   
+  </Card>
+  <Card title="Unified Vulnerability Repository" icon="arrows-to-circle" href="#organization-overview-graph">
+    
+  </Card>
+  <Card title="Vulnerability Categorization" icon="layer-group" href="#no-vulnerabilities-in-each-state">
+   
+  </Card>
+  <Card title="Status and Severity Tracking" icon="chart-line" href="#top-5-vulnerabilities">
+    
+  </Card>
+  <Card title="Vulnerability Search Feature" icon="searchengin" href="#severity-classification-and-aggregated-cvss-score">
+   
+  </Card>
+
+   <Card title="Sorting and Filtering Capabilities" icon="arrow-up-z-a" href="#upcoming-security-assessments">
+   
+  </Card>
+</CardGroup>
+
+
+<img
+  className="glass rounded-xl"
+  src="/images/csm/7.png"
+  alt="Main Dashboard"
+/>
+
+
+## Assessment:
+
+Assessment refers to the process of evaluating and analyzing the security posture of a system, network, application, or organization. Assessments are conducted to identify vulnerabilities, weaknesses, and potential threats that could be exploited by malicious actors. The goal is to proactively discover and address security issues before they can be exploited. <br/>
+The Assessments feature in our product provides a centralized platform to plan, execute, and monitor these assessments. It allows users to track the status of assessments, view analytics, and manage the assessment lifecycle efficiently.
+
+
+#### Creating assessments
+The First step towards the scheduling an assessemnt is to create it. Following are the steps to be followed to create your first assessment.
+
+
+<Steps>
+  <Step title="Access Assessment page">
+    <p>Navigate to assessments page. The URL will be https://snapsec.co/csm/assessments</p>
+  </Step>
+
+  <Step title="Accessing assessment planner page">
+    <p>Click on create assessment button on the right side of assessment page</p>
+  </Step>
+
+  <Step title="Entering neccessary information">
+    <p>
+    <li>
+    <u>__Plan Type:__</u> This field denotes the type of assessment an organization is planning. It could be **Single Assessment** or **Continious security testing** 
+
+    <AccordionGroup>
+  <Accordion title="Single Assessment">
+    A single assessment involves testing the security posture of an organization or system at a specific point in time for a predetermined duration, typically over a set number of days. Single assessments are valuable for periodic evaluations, compliance checks, or identifying vulnerabilities during specific phases of a project.
+
+
+  </Accordion>
+
+  <Accordion title="Continious Security Testing">
+    Continuous security assessment, on the other hand, is an ongoing and dynamic approach to evaluating and maintaining the security of an organization or system. Unlike a single assessment, continuous assessments involve regular and frequent testing at predetermined intervals, such as weekly or monthly. The frequency of testing and the number of testing days per test are specified to ensure consistent monitoring.
+  </Accordion>
+</AccordionGroup>
+</li>
+
+<li>
+<u>__Assessment Duration:__</u> This determines how many years will the assessment be active. 
+<Info> Currently we offer upto two years of assessment </Info>
+</li>
+
+<li>
+<u>__Frequency:__</u> This determines the the rate at which security testing is conducted during an active assessment. <br/>
+Organizations have the flexibility to customize the testing interval based on their security needs. They can opt for either a **monthly** or **weekly** security testing frequency, depending on their risk tolerance, operational requirements, and the dynamic nature of their systems.<br/>
+Organizations have the further ability to determine the interval between each assessment. Giving them power to precisely schedule an assessment.
+</li>
+    
+<li><u>__Number of Days:__</u> This determines the duration for which the test must be performed on each specified test date. This parameter sets the timeframe during which security professionals or automated tools actively assess the system, network, or application for vulnerabilities and weaknesses. The duration is a critical factor in determining the thoroughness of the assessment, allowing for a comprehensive analysis of the security posture within the specified time window. Adjusting the number of days can impact the depth of the assessment, ensuring that the evaluation is robust and aligns with the security requirements and objectives of the organization.</li>
+    
+<li><u>__Scope:__</u> The scope of an assessment defines the boundaries, targets, and objectives of the evaluation process. It outlines what is included and excluded from the assessment, helping to focus efforts and resources effectively. A well-defined scope is crucial for managing expectations, optimizing resource utilization, and achieving meaningful results in the assessment.</li>
+    
+    </p>
+  </Step>
+
+  <Step title="Calculation:">
+    <p>Click on the **"Calculate"** button. This will provide you an overview of number of tests for this assessment and how long will each test last, depending on the information provided. This will give you an overall image of what you will be expencting throuout this assessment</p>
+  </Step>
+
+  <Step title="Finalising Assessment:">
+    <p>Click on the **"Finish"** button. After you review the assessment schedule details and do not have any changes to make we finilize the assessment and it will show up in assessments page.</p>
+  </Step>
+</Steps>
+
+<Info> Each test will be shown as different assessment and all can be managed seperately.</Info>
+
+#### Configuring Assessments
+
+
+#### Editing Assessments
+
+<Steps>
+  <Step title="Access Report Editing:">
+    <p>Open the report and click on the "Edit" icon.</p>
+  </Step>
+
+  <Step title="Enter Editing Mode:">
+    <p>The report editing interface will open, presenting a text area on the screen.</p>
+  </Step>
+
+  <Step title="Modify Report Content:">
+    <p>Make the necessary modifications to the content within the text area.</p>
+  </Step>
+
+  <Step title="Save Changes:">
+    <p>Click on the "Save" button to apply and save the edited content.</p>
+  </Step>
+</Steps>
+
+#### Deleting Assessments
+
+<Steps>
+  <Step title="Access Assessment page:">
+    <p>Open the assessments page.</p>
+  </Step>
+
+  <Step title="Deleting:">
+    <p>Click on delete icon next to assessment you want to delete</p>
+  </Step>
+
+  <Step title="Confirmation:">
+    <p>A confirmation dialogue box will appear to confirm that you want to delete this assessment.</p>
+  </Step>
+
+  <Step title="Confirm">
+    <p>Click on the "Confirm" button to apply and delete the assessment content.</p>
+  </Step>
+
+</Steps>
+<Warning> Assessment once deleted cannot be recovered </Warning>
+
+
+## Assessment Status:
+
+This shows the current status of Assessment.It indicates where the assessment stands in terms of the overall process of scheduled, running, and finished. <br/>
+The current status changes depending on the date and duration of assessment. If assessment has a future date its status will be "Scheduled". If assessment is currently running it will show as "Active". If the assessment has concluded it will show as "finished"
+
+
+## Assessment Schedule
+
+Scheduling assessments involves the proactive planning and setting of specific dates for conducting security assessments within an organization. By defining the date of assessment in advance, organizations can ensure preparedness, coordinate with relevant stakeholders, and align the assessment activities with broader security objectives. 
+#### How to schedule an Assessment?:
+
+<Steps>
+  <Step title="Navigate to assessments page">
+  </Step>
+
+  <Step title="Click on 'Edit' icon next to assessment ">
+  </Step>
+
+  <Step title="Edit menu:">
+    <p>An edit menu will pop-up with different options we can configure. Click on __Date__ field.</p>
+  </Step>
+
+  <Step title="Choose Appropriate date:">
+    <p>Choose the date on which you want to schedule an assessment</p>
+  </Step>
+
+  <Step title="Click on 'Done' ">
+  </Step>
+</Steps>
+
+
+## Assessment type
+
+Security assessments come in various types, each serving a specific purpose in evaluating and enhancing the security of systems, networks, or applications.
+
+<AccordionGroup>
+
+  <Accordion title="Black Box">
+    Black Box Testing, also referred to as functional or behavioral testing, focuses solely on the external behavior of a system. Testers do not have access to the internal code, structure, or implementation details. This approach simulates the perspective of an external user or attacker, testing the system's functionalities without prior knowledge of its internal workings. Black Box Testing is effective for assessing user experience, functionality, and overall system behavior.
+
+
+  </Accordion>
+
+  <Accordion title="White Box">
+    White Box Testing, also known as clear, glass-box, or structural testing, involves examining the internal workings, code, and structure of a system or application. Testers have full knowledge of the internal architecture and logic. This approach aims to ensure that all code paths are tested thoroughly, addressing aspects such as decision branches, loops, and data flow. White Box Testing is often performed by developers or specialized testing teams familiar with the system's internal design.
+  </Accordion>
+
+  <Accordion title="Grey Box">
+    Grey Box Testing combines elements of both White Box and Black Box Testing. Testers have partial knowledge of the internal workings, such as high-level design or limited access to the source code. This approach allows for a more comprehensive assessment, considering both internal structures and external behaviors. Grey Box Testing is particularly useful for finding vulnerabilities and assessing the system from a semi-informed perspective, striking a balance between thoroughness and realism.
+  </Accordion>
+</AccordionGroup>
+
+#### Configuring assessment Type:
+<Steps>
+  <Step title="Click on edit icon next to assessment">
+  </Step>
+
+  <Step title="Edit menu:">
+    <p>An edit menu will pop-up with different options we can configure.</p>
+  </Step>
+
+  <Step title="Select appropriate assessment type">
+    <p>On the left middle of menu-bar, there is an Assessment Type Radio GamepadButton. Select the type of test that fits this assessment.</p>
+  </Step>
+
+  <Step title="Click Done">
+    <p>Within the CVSS calculator, select the appropriate options and parameters that reflect the updated severity of the vulnerability.</p>
+  </Step>
+
+</Steps>
+
+
+
+## Duration
+Test duration refers to the specific time period allocated for conducting a security assessment. It represents the number of days during which security professionals actively evaluate and analyze the target system, network, or application. The duration is a crucial factor that impacts the thoroughness of the assessment, allowing for a comprehensive examination of potential vulnerabilities and security weaknesses. The specified number of days per assessment is determined based on the complexity of the target environment, the scope of testing, and the objectives of the assessment. A well-defined test duration ensures that security professionals have adequate time to perform in-depth analysis, simulate real-world attack scenarios, and provide actionable insights to enhance the overall security posture.
+
+
+#### Configuring test Duration
+
+<Steps>
+  <Step title="Click on edit icon next to assessment">
+  </Step>
+
+  <Step title="Edit menu:">
+    <p>An edit menu will pop-up with different options we can configure.</p>
+  </Step>
+
+  <Step title="Specify number of days:">
+    <p>In edit menu, there is a parameter 'Number of days'. Select the number of days for this particular assessment</p>
+  </Step>
+
+  <Step title="Click Done">
+  </Step>
+
+</Steps>
+
+
+## Assessment collaboration
+Assessment collaboration is a feature that enables users to work together on a specific assessment within a vulnerability management system. With this functionality, administrators or assessment owners can specify and invite specific users to collaborate on a particular assessment. Only invited users will have access to view, contribute, and collaborate on the assessment. This ensures that sensitive security information is shared only with authorized individuals and restricts access to those who have been explicitly invited. This collaborative approach enhances communication, teamwork, and information sharing among designated users while maintaining a secure and controlled environment for managing and mitigating vulnerabilities.
+
+#### Inviting and managing collaborators
+
+<Steps>
+  <Step title="Click on 'Edit' Icon next to assessment">
+  </Step>
+
+  <Step title="Edit menu:">
+    <p>An edit menu will pop-up with different options we can configure.</p>
+  </Step>
+
+  <Step title="Selecting collaborators">
+    <p>Click on text-box below 'Select collaborator' option. CSM will automatically list all the team members in organization. Click on team members you want to add as collaborators.</p>
+  </Step>
+
+  <Step title="Click Done">
+  </Step>
+
+</Steps>
+
+
+## Scope
+Assessment scope defines the boundaries, objectives, and specific parameters of a security assessment. It outlines what is included and excluded from the evaluation, detailing the systems, networks, applications, or processes that will be subject to testing. The scope also clarifies the goals and objectives of the assessment, specifying the testing methodologies, tools, and techniques that will be employed. A well-defined assessment scope is crucial for providing clarity to the security team, ensuring that all relevant assets are covered, and establishing clear expectations with stakeholders. It helps prevent misunderstandings and ensures that the assessment aligns with the organization's security objectives and compliance requirements.
+
+#### Configuring assessment Scopes.
+<Steps>
+  <Step title="Click on 'Edit' Icon next to assessment">
+  </Step>
+
+  <Step title="Edit menu:">
+    <p>An edit menu will pop-up with different options we can configure.</p>
+  </Step>
+
+  <Step title="Selecting Scopes">
+    <p>Click on text-box below 'Scope' option. Enter all the scopes of assessment.</p>
+  </Step>
+
+  <Step title="Click Done">
+  </Step>
+
+</Steps>
+
+
+## Assessment Analytics
+Assessment report provides a comprehensive overview of the security assessment findings for a system, network, or application. It includes key details such as the total number of identified vulnerabilities, their respective status (e.g., open, in progress, resolved), severity levels, and a summary of each vulnerability. The report typically outlines the impact of the vulnerabilities, the steps to reproduce them, and their associated risk levels. Additionally, it may offer insights into the overall security posture, including any trends or patterns observed during the assessment. The goal of the assessment report is to provide stakeholders with a clear understanding of the security vulnerabilities, their potential impact, and actionable recommendations for remediation, contributing to informed decision-making and effective risk mitigation.
+
+### Viewing analytics of assessment
+<Steps>
+  <Step title="To view analytics of assessment, click on 'Pie-chart' icon next to assessment">
+  </Step>
+</Steps>
+
+
+
+### Submitting reports on specific assessment
+Assessment Vulnerability Reporting in SnapSec CSM offers a streamlined and collaborative approach to managing vulnerabilities. Each assessment receives a unique, public URL, enabling security teams, regardless of their affiliation or service provider, to submit vulnerability reports. This public accessibility ensures that not only internal teams but also external entities such as third-party pentest services or independent security researchers can contribute to the assessment. This feature enhances transparency and allows organizations to centralize their vulnerability management within SnapSec CSM, promoting a cohesive and efficient response to security issues. The open nature of the URL fosters collaboration, enabling a diverse range of contributors to actively participate in strengthening the overall security posture of the organization.
+
+<Steps>
+  <Step title="Navigate to assessments page">
+  </Step>
+
+  <Step title="Click on 'File' Icon next to assessment">
+    <p>The URL of assessment will be automatically copied and can be publically accessed.</p>
+  </Step>
+
+</Steps>
+
+
+
