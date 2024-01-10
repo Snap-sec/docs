@@ -1,0 +1,196 @@
+---
+title: 'Vulnerability Management - Assets '
+description: "The Assets feature in our system provides a comprehensive overview of an organization's digital infrastructure. Users can conveniently view a detailed list of all company assets, distinguishing between those that have undergone testing and those pending assessment. The page offers crucial insights into each asset's testing history, including when the assessment was conducted. For effective risk management, users can assess the security status of each asset, with details on the number of open and closed vulnerabilities associated with them. Additionally, the feature provides a total organizational risk score, offering a high-level snapshot of the overall security posture. Users can further drill down into individual assets to access specific risk scores for a more granular understanding. The ability to schedule assessments directly from this page enhances workflow efficiency, allowing organizations to proactively manage and improve their security posture across their digital assets."
+---
+
+
+
+<img
+  className="hidden dark:block"
+  src="/images/d1.png"
+  alt="Main Dashboard"
+/>
+
+
+## On this Page
+<CardGroup cols={2}>
+     <Card title="Introduction" icon="hand" href="#">
+   
+  </Card>
+  <Card title="Unified Vulnerability Repository" icon="arrows-to-circle" href="#organization-overview-graph">
+    
+  </Card>
+  <Card title="Vulnerability Categorization" icon="layer-group" href="#no-vulnerabilities-in-each-state">
+   
+  </Card>
+  <Card title="Status and Severity Tracking" icon="chart-line" href="#top-5-vulnerabilities">
+    
+  </Card>
+  <Card title="Vulnerability Search Feature" icon="searchengin" href="#severity-classification-and-aggregated-cvss-score">
+   
+  </Card>
+
+   <Card title="Sorting and Filtering Capabilities" icon="arrow-up-z-a" href="#upcoming-security-assessments">
+   
+  </Card>
+</CardGroup>
+
+
+<img
+  className="glass rounded-xl"
+  src="/images/csm/7.png"
+  alt="Main Dashboard"
+/>
+
+
+### Assets Overview
+The Assets List page consolidates all assets of organization in one central location. It offers an eagle-eye view of all assets and provides efficient management of assets.
+
+#### Numerical assets overview
+This provides the comprehensive numerical overview of organization assets.
+
+<img height="200" className="glass rounded-xl" src="/images/csm/13.png"/>
+
+| Property        | Description                                         |
+| --------------- | --------------------------------------------------- |
+| **Total Assets**                 | This is the total number of assets of organization  |
+| **Tested Assets**                | Number of assets that have been tested so far       |
+| **Untested Assets**              | Number of assets that have not been tested so far   |
+| **Organization risk score**      | Total organization risk score based on risk score of all assets. |
+
+
+
+#### Columns in assets overview
+**List of table columns in the assets list page:**
+
+| Property        | Description                                         |
+| --------------- | --------------------------------------------------- |
+| **#ID**                               | This is the serial number of assets.  |
+| **Asset Name**                        | The actual name/address of asset. <br/><i>Important assets have "Star" icon next to them</i>|
+| **Last Tested**                       | Date when the asset was last tested   |
+| **Open Vulnerabilities**              | Number of Open vulnerabilities for each assset. |
+| **Closed Vulnerabilities**            | Number of Close vulnerabilities for each assset. |
+| **Risk Status**                       | Level of security risk of each asset based on open vulnerabilities and if the asset was recently tested. |
+
+
+
+### Adding assets
+<p>
+Adding assets to our platform is a flexible and efficient process, offering two distinct methods for your convenience. 
+1. __Manual asset addition:__ Allows users to input asset details directly into the system, providing a hands-on approach for adding specific assets. <br/>
+<Info>This method is useful for instances where a detailed and customized entry is preferred. </Info>
+2. __Automatic fetching of assets:__ streamlining the process by automatically pulling in asset information from relevant sources. <br/>
+<Info>This automated method is particularly beneficial for organizations with large and dynamic asset inventories, ensuring accuracy and saving valuable time.</Info> <br/>
+
+
+Whether opting for manual input or automated retrieval, our asset addition process caters to diverse organizational needs, offering a seamless experience for managing and securing your digital infrastructure.
+</p>
+
+#### Manually adding assets
+<Steps>
+  <Step title="Login to CSM">
+  </Step>
+
+  <Step title="Navigate to assets feature">
+    <p>The URL is: https://snapsec.co/csm/assets</p>
+  </Step>
+
+  <Step title="Click on '3 dots' in the top right corner">
+  </Step>
+
+  <Step title="Click on 'Import Assets' ">
+    <p>This will open a text box</p>
+  </Step>
+
+  <Step title="Enter all the assets you want to add.">
+  <Warning>Insert only one asset per line. </Warning>
+  </Step>
+  
+  <Step title="Click on 'Import Assets' ">
+  </Step>
+
+</Steps>
+
+#### Automatically fetching assets
+<Steps>
+  <Step title="Login to CSM">
+  </Step>
+
+  <Step title="Navigate to assets feature">
+    <p>The URL is: https://snapsec.co/csm/assets</p>
+  </Step>
+
+  <Step title="Click on '3 dots' in the top right corner">
+  </Step>
+
+  <Step title="Click on 'Try fetching assets' ">
+  </Step>
+
+  <Step title="CSM will now automatically fetch and add assets">
+  </Step>
+  
+</Steps>
+
+### Deleting assets
+
+<Warning> Deleting assets in currently not supported</Warning>
+
+### Scheduling assesment for asset
+
+<Steps>
+  <Step title="Login to CSM">
+  </Step>
+
+  <Step title="Navigate to assets feature">
+    <p>The URL is: https://snapsec.co/csm/assets</p>
+  </Step>
+
+  <Step title="Click on '3 dots' next to asset for which you want to schedule assessment">
+  </Step>
+
+  <Step title="Click on 'Schedule assessment' ">
+  <p> This will open assessment planner page.<br/> To know about more on how to plan assessment Click [here](http://localhost:8000/products/csm/articles/assessments#creating-assessments)</p>
+  </Step>
+
+  <Step title="Schedule you assesment and you are all set">
+  </Step>
+  
+</Steps>
+
+### Important assests
+<p>The __"Important Assets"__ feature in our vulnerability management platform allows organizations to prioritize and monitor key assets effortlessly. Users can designate specific assets as important, and these assets are prominently displayed at the top of the list for quick access. <br/>This streamlined view enables organizations to __efficiently track the current status of crucial assets__ without the need for extensive searches. Information such as __risk score__, the __number of open and closed vulnerabilities__, and the __last testing date__ is readily available for each important asset, providing a comprehensive overview of their security posture. <br/>This feature enhances visibility and facilitates proactive management of critical assets, ensuring that organizations can promptly address security concerns and maintain a vigilant approach to safeguarding their key infrastructure.</p>
+
+#### Marking assets as important
+<Steps>
+  <Step title="Login to CSM">
+  </Step>
+
+  <Step title="Navigate to assets feature">
+    <p>The URL is: https://snapsec.co/csm/assets</p>
+  </Step>
+
+  <Step title="Click on '3 dots' next to asset you want to mark as important">
+  </Step>
+
+  <Step title="Click on 'Mark as important' ">
+  <p> The asset will now be marked as important and will be shown on top</p>
+  </Step>
+</Steps>
+<Info> Important assets have "star" icon next to them</Info>
+
+#### Unmark assets as important
+<Steps>
+  <Step title="Login to CSM">
+  </Step>
+
+  <Step title="Navigate to assets feature">
+    <p>The URL is: https://snapsec.co/csm/assets</p>
+  </Step>
+
+  <Step title="Click on '3 dots' next to asset you want to unmark">
+  </Step>
+
+  <Step title="Click on 'Remove as important' ">
+  <p> The asset will now be removed from important and will not shown on top</p>
+  </Step>
+</Steps>
