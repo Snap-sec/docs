@@ -7,41 +7,24 @@ description: "An API token is a unique and securely generated authentication key
 
 <img
   className="hidden dark:block"
-  src="/images/d1.png"
-  alt="Main Dashboard"
+  src="/images/csm/43.png"
 />
 
 
 ## On this Page
 <CardGroup cols={2}>
-     <Card title="Introduction" icon="hand" href="#">
+     <Card title="Introduction" icon="readme" href="#">
    
   </Card>
-  <Card title="Unified Vulnerability Repository" icon="arrows-to-circle" href="#organization-overview-graph">
+  <Card title="Generating API Key" icon="square-plus" href="#generate-an-api-key">
     
   </Card>
-  <Card title="Vulnerability Categorization" icon="layer-group" href="#no-vulnerabilities-in-each-state">
+  <Card title="API Key Usage" icon="terminal" href="#use-api-key">
    
   </Card>
-  <Card title="Status and Severity Tracking" icon="chart-line" href="#top-5-vulnerabilities">
-    
-  </Card>
-  <Card title="Vulnerability Search Feature" icon="searchengin" href="#severity-classification-and-aggregated-cvss-score">
-   
-  </Card>
-
-   <Card title="Sorting and Filtering Capabilities" icon="arrow-up-z-a" href="#upcoming-security-assessments">
-   
-  </Card>
+  <Card title="Revoke API Key" icon="square-minus" href="#revoke-api-key">
+   </Card> 
 </CardGroup>
-
-
-<img
-  className="glass rounded-xl"
-  src="/images/csm/7.png"
-  alt="Main Dashboard"
-/>
-
 
 ## API Key:
 
@@ -52,14 +35,15 @@ description: "An API token is a unique and securely generated authentication key
   </Step>
 
   <Step title="Navigate to settings">
-    <p>Click on create assessment button on the right side of assessment page</p>
   </Step>
 
-  <Step title="Click on 'API Key' option">
+  <Step title="Click on 'API Key' option"> 
+  <img className="glass rounded-xl" src="/images/csm/14.png"/>
   </Step>
 
   <Step title="Click on 'Refresh Button' next to API key:">
     <p>This will generate an API key. The generated API key will be shown Text Box</p>
+    <img className="glass rounded-xl" src="/images/csm/15.png"/>
   </Step>
 
   <Step title="API Key has been generated and can be used.">
@@ -83,16 +67,16 @@ description: "An API token is a unique and securely generated authentication key
   </Step>
 
   <Step title="Click on 'API Key' option">
+  <img height="50" className="glass rounded-xl" src="/images/csm/14.png"/>
   </Step>
 
   <Step title="Click on 'Refresh Button' next to API key:">
-    <p>This will generate an API key and access to old API key has been revoked</p>
+    <p>This will generate a new API key and access to old API key will be revoked</p>
+    <img className="glass rounded-xl" src="/images/csm/15.png"/>
   </Step>
 
-  <Step title="Access to old API Key has now been revoked.">
-  </Step>
 </Steps>
-
+<Warning>Access to old API Key has now been revoked.</Warning>
 
 
 

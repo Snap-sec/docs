@@ -5,40 +5,32 @@ description: "The Assessments feature in our vulnerability management product of
 
 <img
   className="hidden dark:block"
-  src="/images/d1.png"
-  alt="Main Dashboard"
+  src="/images/csm/38.png"
 />
 
 
 ## Key Topics
 <CardGroup cols={2}>
-     <Card title="Introduction" icon="hand" href="#">
+     <Card title="Introduction" icon="readme" href="#">
    
   </Card>
-  <Card title="Unified Vulnerability Repository" icon="arrows-to-circle" href="#organization-overview-graph">
+  <Card title="Assessment Creation" icon="arrows-to-circle" href="#organization-overview-graph">
     
   </Card>
-  <Card title="Vulnerability Categorization" icon="layer-group" href="#no-vulnerabilities-in-each-state">
+  <Card title="Assessment Configuration" icon="layer-group" href="#no-vulnerabilities-in-each-state">
    
   </Card>
-  <Card title="Status and Severity Tracking" icon="chart-line" href="#top-5-vulnerabilities">
+  <Card title="Assessment Type" icon="chart-line" href="#top-5-vulnerabilities">
     
   </Card>
-  <Card title="Vulnerability Search Feature" icon="searchengin" href="#severity-classification-and-aggregated-cvss-score">
+  <Card title="Assessment Scope" icon="searchengin" href="#severity-classification-and-aggregated-cvss-score">
    
   </Card>
 
-   <Card title="Sorting and Filtering Capabilities" icon="arrow-up-z-a" href="#upcoming-security-assessments">
+   <Card title="Assessment analytics" icon="arrow-up-z-a" href="#upcoming-security-assessments">
    
   </Card>
 </CardGroup>
-
-
-<img
-  className="glass rounded-xl"
-  src="/images/csm/7.png"
-  alt="Main Dashboard"
-/>
 
 
 ## Assessment:
@@ -58,9 +50,11 @@ The First step towards the scheduling an assessemnt is to create it. Following a
 
   <Step title="Accessing assessment planner page">
     <p>Click on create assessment button on the right side of assessment page</p>
+    <img className="glass rounded-xl" src="/images/csm/39.png"/>
   </Step>
 
   <Step title="Entering neccessary information">
+  <img className="glass rounded-xl" src="/images/csm/14.png"/>
     <p>
     <li>
     <u>__Plan Type:__</u> This field denotes the type of assessment an organization is planning. It could be **Single Assessment** or **Continious security testing** 
@@ -109,27 +103,68 @@ Organizations have the further ability to determine the interval between each as
 
 #### Configuring Assessments
 
-
-#### Editing Assessments
-
 <Steps>
-  <Step title="Access Report Editing:">
-    <p>Open the report and click on the "Edit" icon.</p>
+  <Step title="Navigate to assessments page">
   </Step>
 
-  <Step title="Enter Editing Mode:">
-    <p>The report editing interface will open, presenting a text area on the screen.</p>
+  <Step title="Click on 'Edit' icon next to assessment with 'To be scheduled' status ">
   </Step>
 
-  <Step title="Modify Report Content:">
-    <p>Make the necessary modifications to the content within the text area.</p>
+  <Step title="Edit menu:">
+    <p>An edit menu will pop-up with different options we can configure.</p>
   </Step>
 
-  <Step title="Save Changes:">
-    <p>Click on the "Save" button to apply and save the edited content.</p>
+  <Step title="Choose Appropriate Assessment name">
   </Step>
+
+  <Step title="Choose Assessment Type:">
+    <p>Choose the type of assessment. To know more about different types of assesments click [here](/products/csm/articles/assessments#assessment-type)  </p>
+  </Step>
+
+
+  <Step title="Choose Appropriate date:">
+    <p>Choose the date on which you want to schedule an assessment</p>
+  </Step>
+
+  <Step title="Choose Assessment duration:">
+    <p>To know more about assessment duration. Click [here](/products/csm/articles/assessments#duration)</p>
+  </Step>
+
+  <Step title="Invite team members">
+    <p>Invite the team members related to this specific assessment</p>
+  </Step>
+
+  <Step title="Enter Scope of asssessment">
+    <p>Enter one scope per line</p>
+  </Step>
+
+  <Step title="Click Done">
+    <p>You are all set now!</p>
+  </Step>
+
 </Steps>
 
+#### Editing Assessments
+<Warning> Only "name" and "collaborators" can be edited in Running or Finished assessments</Warning>
+
+<Steps>
+  <Step title="Navigate to assessments page">
+  </Step>
+
+  <Step title="Click on 'Edit' icon next to assessment">
+  </Step>
+
+  <Step title="Edit menu:">
+    <p>An edit menu will pop-up.</p>
+  </Step>
+
+  <Step title="Make appropriate changes">
+  </Step>
+
+  <Step title="Click 'Done'">
+  </Step>
+
+</Steps>
 #### Deleting Assessments
 
 <Steps>
@@ -156,33 +191,15 @@ Organizations have the further ability to determine the interval between each as
 ## Assessment Status:
 
 This shows the current status of Assessment.It indicates where the assessment stands in terms of the overall process of scheduled, running, and finished. <br/>
-The current status changes depending on the date and duration of assessment. If assessment has a future date its status will be "Scheduled". If assessment is currently running it will show as "Active". If the assessment has concluded it will show as "finished"
+The current status changes depending on the date and duration of assessment. 
+1. If assessment has a future date its status will be "Scheduled". 
+2. If assessment is currently running it will show as "Active". 
+3. If the assessment has concluded it will show as "finished"
 
 
 ## Assessment Schedule
 
 Scheduling assessments involves the proactive planning and setting of specific dates for conducting security assessments within an organization. By defining the date of assessment in advance, organizations can ensure preparedness, coordinate with relevant stakeholders, and align the assessment activities with broader security objectives. 
-#### How to schedule an Assessment?:
-
-<Steps>
-  <Step title="Navigate to assessments page">
-  </Step>
-
-  <Step title="Click on 'Edit' icon next to assessment ">
-  </Step>
-
-  <Step title="Edit menu:">
-    <p>An edit menu will pop-up with different options we can configure. Click on __Date__ field.</p>
-  </Step>
-
-  <Step title="Choose Appropriate date:">
-    <p>Choose the date on which you want to schedule an assessment</p>
-  </Step>
-
-  <Step title="Click on 'Done' ">
-  </Step>
-</Steps>
-
 
 ## Assessment type
 
@@ -205,32 +222,11 @@ Security assessments come in various types, each serving a specific purpose in e
   </Accordion>
 </AccordionGroup>
 
-#### Configuring assessment Type:
-<Steps>
-  <Step title="Click on edit icon next to assessment">
-  </Step>
-
-  <Step title="Edit menu:">
-    <p>An edit menu will pop-up with different options we can configure.</p>
-  </Step>
-
-  <Step title="Select appropriate assessment type">
-    <p>On the left middle of menu-bar, there is an Assessment Type Radio GamepadButton. Select the type of test that fits this assessment.</p>
-  </Step>
-
-  <Step title="Click Done">
-    <p>Within the CVSS calculator, select the appropriate options and parameters that reflect the updated severity of the vulnerability.</p>
-  </Step>
-
-</Steps>
-
-
-
 ## Duration
 Test duration refers to the specific time period allocated for conducting a security assessment. It represents the number of days during which security professionals actively evaluate and analyze the target system, network, or application. The duration is a crucial factor that impacts the thoroughness of the assessment, allowing for a comprehensive examination of potential vulnerabilities and security weaknesses. The specified number of days per assessment is determined based on the complexity of the target environment, the scope of testing, and the objectives of the assessment. A well-defined test duration ensures that security professionals have adequate time to perform in-depth analysis, simulate real-world attack scenarios, and provide actionable insights to enhance the overall security posture.
 
 
-#### Configuring test Duration
+#### Edit test Duration
 
 <Steps>
   <Step title="Click on edit icon next to assessment">
