@@ -1,20 +1,16 @@
 ---
-title: 'Vulnerability Management - Reports'
+title: 'Vulnerability Management - Assessment Reports'
 description: "The Reports feature in our vulnerability management platform offers organizations a streamlined and efficient way to generate comprehensive reports for each assessment. With an automatic and fast report generation process, users can effortlessly extract valuable insights and findings from their security assessments. This feature ensures that organizations can quickly access and share key information, including vulnerabilities, remediation progress, risk scores, and other relevant metrics. The automated nature of report generation reduces manual effort, saving time and resources for security teams. The reports are designed to be clear, concise, and actionable, facilitating communication within the organization and supporting informed decision-making. Users can download the reports, facilitating easy sharing with stakeholders, compliance auditors, and other relevant parties. This feature streamlines the reporting workflow, enhancing the organization's ability to communicate and act upon critical security findings effectively."
 ---
 
 <img
   className="hidden dark:block"
-  src="/images/csm/26.png"
-  alt="Main Dashboard"
+  src="/images/csm/46.png"
 />
 
 
 ## Key Topics
 <CardGroup cols={2}>
-     <Card title="Introduction" icon="readme" href="#">
-   
-  </Card>
   <Card title="Generate Report" icon="bars-staggered" href="#generating-assesment-report">
     
   </Card>
@@ -23,6 +19,10 @@ description: "The Reports feature in our vulnerability management platform offer
   </Card>
   <Card title="Delete Report" icon="trash" href="#deleting-report">
     
+  </Card>
+
+  <Card title="Report Status" icon="hourglass" href="#different-report-status-and-what-they-mean">
+   
   </Card>
 </CardGroup>
 
@@ -49,7 +49,7 @@ description: "The Reports feature in our vulnerability management platform offer
   </Step>
 </Steps>
 
-<Info> Time for report generation depends on how big the assesment is.</Info>
+<Note> Time for report generation depends on how big the assesment is.</Note>
 
 
 #### Download report
@@ -77,6 +77,7 @@ description: "The Reports feature in our vulnerability management platform offer
   </Step>
 
   <Step title="Click `Delete` Icon next to report">
+  <img className="glass rounded-xl" src="/images/csm/47.png"/>
   </Step>
 
   <Step title="Click `Confirm` in confirmation dialogue box">
@@ -84,3 +85,17 @@ description: "The Reports feature in our vulnerability management platform offer
 
 </Steps>
 
+
+### Different Report Status and what they mean:
+
+<CardGroup cols={1}>
+  
+  <Card title="Report is being Generated" icon="clock-rotate-left">
+  </Card>
+
+  <Card title="Report generation failed due to some error" icon="circle-xmark">
+  </Card>
+
+  <Card title="Report ready." icon="circle-check" href="#deleting-report">
+  </Card>
+</CardGroup>

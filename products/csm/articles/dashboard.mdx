@@ -1,24 +1,37 @@
 ---
 title: 'Vulnerability Management - Dashboard'
-description: "The SnapSec 360 dashboard page provides a holistic view of your organization's security landscape. It showcases real-time insights, vulnerability metrics, collaboration updates, and executive summaries for informed decision-making and proactive security measures."
+description: "The SnapSec 360 dashboard page provides a holistic view of your organization's security landscape. Through visual graphs and key metrics, it offers insights into the distribution of open and closed vulnerabilities, the number of vulnerabilities in different states, and the top open vulnerabilities. Additionally, the dashboard presents the aggregated Common Vulnerability Scoring System (CVSS) score for the entire organization and highlights upcoming security assessments. This tool is designed to empower organizations in prioritizing and addressing security vulnerabilities efficiently. It showcases real-time insights, vulnerability metrics, collaboration updates, and executive summaries for informed decision-making and proactive security measures."
 ---
 
 <img
   className="glass rounded-xl"
-  src="/images/d1.png"
+  src="/images/csm/dash.png"
   alt="Main Dashboard"
 />
 
 
-## Key Topics
+## Key Benefits
+- __Efficient Prioritization:__ Users can quickly identify and prioritize vulnerabilities based on severity and potential impact.
+- __Progress Tracking:__ The dashboard allows monitoring the status of vulnerability remediation efforts over time.
+- __Risk Assessment:__ The aggregated CVSS score provides a quantitative measure of the organization's security risk.
+- __Proactive Planning:__ Awareness of upcoming security assessments allows the organization to prepare adequately, reducing the likelihood of surprises during testing.
+
+
+
+
+
+
+
+
+## On This Page
 <CardGroup cols={2}>
-     <Card title="Introduction" icon="hand" href="#">
+     <Card title="Introduction" icon="Readme" href="#">
    
   </Card>
   <Card title="Organization Overview" icon="sitemap" href="#organization-overview-graph">
     
   </Card>
-  <Card title="Vulnerability states" icon="chart-bar" href="#no-vulnerabilities-in-each-state">
+  <Card title="Vulnerability states" icon="chart-bar" href="#number-of-vulnerabilities-in-each-state">
    
   </Card>
   <Card title="Top 5 Vulnerabilities" icon="list-ol" href="#top-5-vulnerabilities">
@@ -39,7 +52,7 @@ description: "The SnapSec 360 dashboard page provides a holistic view of your or
 
 
 
-## Organization Overview Graph:
+## Organization Overview Graph
 
 <img
   className="glass rounded-xl"
@@ -55,7 +68,7 @@ The graph presents a visual representation of open and closed vulnerabilities ca
 <Tip>You can click on the graph for details and insights.</Tip>
 
 
-## No Vulnerabilities in Each State:
+## Number of Vulnerabilities in Each State
 
 <img
   className="glass rounded-xl"
@@ -69,10 +82,10 @@ Easily monitor the status of vulnerabilities with a breakdown of those open, res
 
 
 
-<Tip>You can hover over cards to learn more about each state.</Tip>
+<Tip>Click on any state to view all the vulnerabilities of that status.</Tip>
 
 
-## Top 5 Vulnerabilities:
+## Top 5 Vulnerabilities
 
 <img
   className="glass rounded-xl"
@@ -83,9 +96,9 @@ Easily monitor the status of vulnerabilities with a breakdown of those open, res
 Identify and prioritize critical security threats with the Top 5 Vulnerabilities feature. Quickly focus on the most pressing issues, enabling swift decision-making and targeted mitigation actions.
 
 
-<Tip>You can see the top 5 unresolved vulnerabilities highlighted in the table.</Tip>
+<Tip>Click on the vulnerability to view the vulnerability report</Tip>
 
-## Severity Classification and Aggregated CVSS Score:
+## Severity Classification and Aggregated CVSS Score
 <img
   className="glass rounded-xl"
   src="/images/csm/5.png"
@@ -99,7 +112,7 @@ Classify vulnerabilities based on severity levels and assess their overall impac
 
 
 
-## Upcoming Security Assessments:
+## Upcoming Security Assessments
 <img
   className="glass rounded-xl"
   src="/images/csm/6.png"
