@@ -1,5 +1,5 @@
 ---
-title: 'Vulnerability Management - Vulnerability Reports'
+title: 'Vulnerability Reports'
 description: "The Vulnerability Report Page in our comprehensive vulnerability management product serves as a centralized hub for detailed insights into identified security issues. Users can quickly understand the each vulnerability through a concise summary, assess its severity with the provided CVSS score, and understand potential impact. 
 The page offers step-by-step instructions to reproduce the vulnerability, aiding in efficient testing and validation. Real-time status updates keep users informed about the current state of remediation efforts, while detailed report logs ensure a thorough audit trail. 
 Additionally, a collaborative space for user comments allows communication and teamwork, allowing for the seamless exchange of insights and updates, thus allowing users to tailor their engagement with each vulnerability, contributing to an agile and effective vulnerability management process."
@@ -265,22 +265,22 @@ The attachments include screenshots, Video file, log files, configuration files 
     <img height="200" className="glass rounded-xl" src="/images/csm/44.png"/>
   </Step>
 
-  <Step title="Click on `upload attachment`">
-    <p>Click on the cloud icon within the Attachment Section.</p>
+  <Step title="Click on `Cloud` icon in attachment section">
   </Step>
 
-  <Step title="Upload a New File:">
+  <Step title="Select a file you want to upload">
     <p>A new window or interface will appear; use it to upload and attach the desired file to the vulnerability report.</p>
   </Step>
 </Steps>
 
-<Info>CSM will generate Unique ID for each attachment</Info>
+<Note>CSM will generate Unique ID for each attachment</Note>
 
 #### Embedding Attachment in a Vulnerability Report
 
 <Steps>
-  <Step title="Copy the attachment ID of the attachemnt you want embbed ">
+  <Step title="Copy the attachment ID of the attachment you want embbed ">
     <p>After uploading an attachment, go to the Attachment Section and copy the Attachment ID associated with the file.</p>
+    <img height="200" className="glass rounded-xl" src="/images/csm/55.png"/>
   </Step>
 
   <Step title="Navigate to Report Section in which you want to embed the attachment">
@@ -292,23 +292,27 @@ The attachments include screenshots, Video file, log files, configuration files 
 
   <Step title="Paste Attachment ID within curly braces, as shown below">
     <p>
-    Paste the copied Attachment ID (`{{ATTACHMENT_ID}}`) anywhere in the report content.
+    Paste the copied Attachment ID (`{ATTACHMENT_ID}`) anywhere in the report content.
     For example:
 
     ```
     Embedding attachment below this line:
-    ({F8dd2363578})
+    {F8dd2363578}
 
     ```
     </p>
+
+    <img height="200" className="glass rounded-xl" src="/images/csm/56.png"/>
+
+
   </Step>
 
   <Step title="Save the Report">
     <p>Save the changes made to the report.</p>
   </Step>
 
-  <Step title="Preview Attachment in the Report">
-    <p>Upon reloading the report, you should observe the attachment being rendered and displayed in the specified section.</p>
+  <Step title="Attachment will now be rendered in report">
+    <img height="200" className="glass rounded-xl" src="/images/csm/57.png"/>
   </Step>
 </Steps>
 
@@ -322,6 +326,8 @@ The attachments include screenshots, Video file, log files, configuration files 
   </Step>
 
   <Step title="Click on `Bin` Icon next to each attachment">
+      <img height="200" className="glass rounded-xl" src="/images/csm/58.png"/>
+
   </Step>
 
   <Step title="Confirm Deletion:">
@@ -333,7 +339,7 @@ The attachments include screenshots, Video file, log files, configuration files 
   </Step>
 </Steps>
 
-<Tip>If the deleted attachment was used in a report with the text `{{ATTACHMENT_ID}}`, it will no longer be rendered as an attachment in the report. </Tip>
+<Tip>If the deleted attachment was used in a report with the text `{ATTACHMENT_ID}`, it will no longer be rendered as an attachment in the report. </Tip>
 
 
 
@@ -345,7 +351,7 @@ The attachments include screenshots, Video file, log files, configuration files 
   </Step>
 
   <Step title="Click on `Download` Icon next to attachment you want to download">
-    <p>The chosen attachment will be downloaded automatically.</p>
+      <img height="200" className="glass rounded-xl" src="/images/csm/59.png"/>
   </Step>
 
 </Steps>
