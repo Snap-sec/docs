@@ -28,11 +28,11 @@
   "tabs": [
     {
       "name": "Attack Surface Management",
-      "url": "products/asm/index"
+      "url": "products/asm"
     },
     {
       "name": "Vulnerability Management",
-     "url": "products/csm/index"
+      "url": "products/csm"
     }
   ],
   "anchors": [

@@ -28,11 +28,11 @@
   "tabs": [
     {
       "name": "Attack Surface Management",
-      "url": "products/asm/index"
+      "url": "products/asm"
     },
     {
       "name": "Vulnerability Management",
-     "url": "products/csm/index"
+      "url": "products/csm"
     }
   ],
   "anchors": [
@@ -58,8 +58,8 @@
       "pages": ["introduction", "quickstart", "development"]
     },
     {
-      "group": "Our Products",
-      "pages": ["products/asm/index","products/csm/index"]
+      "group": "Quick Links",
+      "pages": ["products/csm/index","products/csm/articles/getstarted","products/csm/articles/dashboard","products/csm/articles/assessments","products/csm/articles/submit_report","products/csm/articles/list","products/csm/articles/vuln_reports","products/csm/articles/assets","products/csm/articles/report","products/csm/articles/blockers","products/csm/articles/apikey","products/csm/articles/users","products/csm/articles/profile"]
     }
     
   ],
