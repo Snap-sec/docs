@@ -1,0 +1,420 @@
+---
+title: 'Vulnerability Reports'
+description: "The Vulnerability Report Page in our comprehensive vulnerability management product serves as a centralized hub for detailed insights into identified security issues. Users can quickly understand the each vulnerability through a concise summary, assess its severity with the provided CVSS score, and understand potential impact. 
+The page offers step-by-step instructions to reproduce the vulnerability, aiding in efficient testing and validation. Real-time status updates keep users informed about the current state of remediation efforts, while detailed report logs ensure a thorough audit trail. 
+Additionally, a collaborative space for user comments allows communication and teamwork, allowing for the seamless exchange of insights and updates, thus allowing users to tailor their engagement with each vulnerability, contributing to an agile and effective vulnerability management process."
+---
+
+<img
+  src="/images/vdp/20.png"
+  alt="Main Dashboard"
+/>
+**Main features of Vulnerability Reports page:**
+
+
+| Property        | Description                                         |
+| --------------- | --------------------------------------------------- |
+| **Proof of Concept (POC)**             | A practical demonstration serving as evidence for the existence of a security issue. It contains Title, Summary, Steps to Reproduce, and Impact details.  |
+| **Status**     | An indicator reflecting the current state of the identified security problem.            |
+| **Common Vulnerability Scoring System (CVSS)**           | A metric used to quantify and communicate the severity of a particular security issue. The report contains both CVSS score as well as CVSS String   |
+| **Vulnerability Timeline** | A chronological overview detailing all actions and changes related to the security problem since its initial report. |
+| **Attachments**          | A compiled list of all pertinent files or documents associated with the reported security problem. |
+| **Report Origin**        | This shows email of the reporter. |
+| **Comments**        | A feature allowing users to provide insights and engage in communication with other team members within the context of the security report. |
+
+
+
+
+## Vulnerability Reports:
+
+This is the main component of a vulnerability report, serving as the comprehensive backbone that furnishes organizations with an in-depth understanding of the identified security vulnerability. This section not only elucidates the intricacies of the vulnerability but also provides explicit guidance on how to verify its existence, enabling responsible parties to independently confirm and replicate the issue.
+
+
+#### Accessing vulnerability Reports
+
+Within this crucial segment, the following components are meticulously addressed:
+
+
+1. **Title:** This provides a brief and meaningful descriptor of security issue being documented.
+2. **Summary:** This provides a brief yet informative snapshot of the key details related to a specific vulnerability. This allows users to quickly understand the nature of the security issue without delving into the full report.
+3. **Steps to reproduce:** This serves as a guide for others to simulate and understand the circumstances under which the vulnerability occurs. By following the provided steps, the individuals responsible for addressing the issue can confirm its existence, investigate its root cause, and subsequently develop and implement an effective solution or mitigation strategy.
+4. **Impact:** This shows the potential consequences and severity of a security vulnerability or threat.  The impact is a crucial factor in prioritizing and addressing vulnerabilities, as it helps security professionals and organizations focus their resources on mitigating the most critical and damaging security risks.
+5. **Conversation:** This section captures the discussions and interactions among the team members regarding the security report. Including this element provides transparency into the collaborative process, allowing stakeholders to understand the thought process, decisions, and recommendations made by the team in response to the identified security issue. It helps in fostering communication, ensuring that all perspectives are considered, and aids in the collective effort to devise and implement effective solutions.
+
+#### Editing Vulnerability Reports
+
+Users have the capability to make modifications to reports, providing them with the flexibility to update and customize the content as needed. This feature allows users to refine and enhance the accuracy and relevance of the information presented in vulnerability reports.
+
+
+<Steps>
+  <Step title="Open the report">
+  </Step>
+
+  <Step title="Click on edit icon next to the section you want to edit">
+    <p>The report editing interface will open, presenting a text area on the screen.</p>
+    <img className="glass rounded-xl" src="/images/vdp/21.png"/>
+  </Step>
+
+  <Step title="Modify Report Content">
+    <p>Make the necessary modifications to the content within the text area.</p>
+  </Step>
+
+  <Step title="Click Update Report to save changes">
+  <img className="glass rounded-xl" src="/images/vdp/22.png"/>
+  </Step>
+</Steps>
+
+<Warning> Do Not simultaneously edit multiple sections of the report.</Warning>
+
+#### Deleting Vulnerability Reports
+
+<Warning>Deleting a vulnerability is not currently supported. </Warning>
+
+<Tip>However, you can mark the vulnerability as "Not Applicable" or "False Positive" to indicate it as closed or resolved in the system.</Tip>
+
+#### Exporting Vulnerability Report
+
+This streamlined process ensures efficient sharing and distribution of individual vulnerability reports in a standardized and accessible format.
+
+
+
+<Steps>
+  <Step title="Open the report you wish to export">
+  </Step>
+
+  <Step title="Click on 'export' icon located in report details section">
+    <img height="200" className="glass rounded-xl" src="/images/csm/28.png"/>
+  </Step>
+
+  <Step title="Click `Save`">
+    <p>Save the generated PDF file to your preferred location on your device.</p>
+  </Step>
+
+  <Step title="Send to Recipients:">
+    <p>Share the exported PDF with relevant stakeholders, colleagues, or anyone requiring access to the vulnerability details.</p>
+  </Step>
+</Steps>
+
+
+
+
+## Vulnerability Status:
+
+
+This shows the current status of vulnerability.It indicates where the vulnerability stands in terms of the overall process of identification, assessment, and remediation.
+
+#### Type of Vulnerability Status
+
+__Following are the status available  for the reports:__
+
+1. **In-Progress**: The vulnerability is actively being addressed, investigated, or mitigated by the relevant parties.
+
+2. **In-Review**: The vulnerability has been identified and is currently under assessment or scrutiny to determine its severity and potential impact.
+
+3. **Unresolved**: The vulnerability has been acknowledged but has not yet been successfully addressed or fixed.
+
+4. **Resolved**: The vulnerability has been successfully addressed, fixed, or mitigated, and is no longer a threat.
+
+5. **False Positive**: The reported vulnerability is not valid, and there is no actual security risk associated with it.
+
+6. **Not Applicable**: The reported vulnerability is not relevant to the system or environment in question and does not pose a risk.
+
+7. **Re-Test**: The vulnerability has been addressed or mitigated, and a re-evaluation or re-testing is required to confirm the effectiveness of the remediation efforts.
+
+
+#### Updating Vulnerability Status:
+
+<Steps>
+  <Step title=" There is an edit icon next to `Status`.">
+   
+  </Step>
+  <Step title="Click on the edit icon. ">
+  <img className="glass rounded-xl" src="/images/vdp/23.png"/>
+    
+  </Step>
+
+  <Step title="From dropdown select the appropriate status you want to change to.">
+    
+  </Step>
+
+  <Step title="Now Click on Check Icon to Update the Status of an Vulnerability.">
+    <img className="glass rounded-xl" src="/images/vdp/24.png"/>
+  </Step>
+</Steps>
+
+
+#### Mass Updating Vulnerability Status:
+
+In certain scenarios, you may find the need to simultaneously update the status of multiple vulnerabilities. However, it's important to note that as of now, we do not yet support this particular feature in our system.
+
+
+<Tip>Comming Soon !</Tip>
+
+## CVSS
+
+
+CVSS provides a numerical score that reflects the impact of a vulnerability, allowing organizations to prioritize and address security issues based on their criticality. The score is determined by evaluating various factors like exploitability of the vulnerability, the impact on confidentiality, integrity, and availability, as well as other relevant metrics. CVSS scores are presented on a scale from 0 to 10, with higher scores indicating more severe vulnerabilities. <br/>
+
+
+
+<AccordionGroup>
+
+  <Accordion title="CVSS Score">
+    The CVSS score, or Common Vulnerability Scoring System score, is a numerical assessment assigned to security vulnerabilities, quantifying their severity and potential impact. Ranging from 0 to 10, a higher CVSS score indicates a more critical vulnerability, aiding in prioritizing remediation efforts based on the assessed risk. This standardized metric considers factors such as exploitability, impact, and complexity to provide an objective measure of vulnerability severity.
+    <img height="200" className="glass rounded-xl" src="/images/csm/32.png"/>
+
+
+
+  </Accordion>
+
+  <Accordion title="CVSS Rating">
+    The CVSS String serves as a textual representation of the CVSS score and associated metrics. It encapsulates detailed information about the characteristics influencing the vulnerability's overall score, offering a quick reference for security professionals. This string is commonly used for concise communication, summarizing key attributes of a vulnerability's severity in a format that facilitates rapid comprehension and decision-making.
+    <img height="200" className="glass rounded-xl" src="/images/csm/33.png"/>
+  </Accordion>
+</AccordionGroup>
+
+
+#### Updating CVSS of Report:
+
+Within our system, we have an integrated CVSS calculator designed to streamline the process of assessing and assigning scores to vulnerabilities. This in-built calculator is a user-friendly tool that automatically performs the necessary computations to determine the CVSS score of a given report. This automation enhances efficiency and accuracy, ensuring that users obtain precise and standardized vulnerability severity ratings without the need for manual calculations.
+
+<Steps>
+  <Step title="There is an edit icon next to `CVSS string`">
+  </Step>
+
+  <Step title="Click on edit option">
+    <img className="glass rounded-xl" src="/images/vdp/26.png"/>
+  </Step>
+
+  <Step title="CVSS Calculator">
+    <p>A CVSS calculator will pop up on the screen, providing a tool for adjusting the score. <br/>For more detailed information on using the CVSS calculator, refer to the documentation <a href="https://www.first.org/cvss/calculator/3.0" target="_blank">here</a>.</p>
+  </Step>
+
+  <Step title="Choose Appropriate Options:">
+    <p>
+    Within the CVSS calculator, select the appropriate options and parameters that reflect the updated severity of the vulnerability.
+    <img height="200" className="glass rounded-xl" src="/images/csm/35.png"/>
+    </p>
+  </Step>
+
+  <Step title="Click Update Severity">
+    <p>The system will automatically re-calculate the new CVSS rating and string based on the chosen options.</p>
+  </Step>
+</Steps>
+
+<Tip>Currently CVSS 3.0 is in place.</Tip>
+
+## Report Timeline
+
+This shows the chronological sequence of events and actions related to the lifecycle of a security vulnerability. Highlighting key events such as identification, status changes, CVSS updates, and any other report modifications. It also tracks user actions, including changes, comments and provides the exact date and time of changes. The timeline provides a clear and structured overview of the key milestones and activities associated with addressing a security vulnerability.
+<img height="200" className="glass rounded-xl" src="/images/vdp/25.png"/>
+
+
+## Attachments
+
+
+This shows the list of attachments that are related to vulnerability and are embedded in the POC. This helps in better understanding the vulnerability by allowing users to include relevant supplementary materials that provide more context or evidence related to the identified vulnerability.
+The attachments include screenshots, Video file, log files, configuration files etc etc.
+
+
+#### Uploading a New Attachment
+
+
+<Steps>
+  <Step title="Open report">
+  </Step>
+
+  <Step title="Scroll down to the Attachment Section.">
+    <img height="200" className="glass rounded-xl" src="/images/vdp/27.png"/>
+  </Step>
+
+  <Step title="Click on `Cloud` icon in attachment section">
+  </Step>
+
+  <Step title="Select a file you want to upload">
+    <p>A new window or interface will appear; use it to upload and attach the desired file to the vulnerability report.</p>
+  </Step>
+</Steps>
+
+<Note>CSM will generate Unique ID for each attachment</Note>
+
+#### Embedding Attachment in a Vulnerability Report
+
+<Steps>
+  <Step title="Copy the attachment ID of the attachment you want embbed ">
+    <p>Click on `Copy Icon` next to attachment</p>
+    <img height="200" className="glass rounded-xl" src="/images/vdp/28.png"/>
+  </Step>
+
+  <Step title="Navigate to Report Section in which you want to embed the attachment">
+  </Step>
+
+  <Step title="Initiate Report Editing">
+    <p>Click on the "Edit Report" icon to access the report editing interface.</p>
+  </Step>
+
+  <Step title="Paste Attachment ID within curly braces, as shown below">
+    <p>
+    Paste the copied Attachment ID (`{ATTACHMENT_ID}`) anywhere in the report content.
+    For example:
+
+    ```
+    Embedding attachment below this line:
+    {F8dd2363578}
+
+    ```
+    </p>
+
+    <img height="200" className="glass rounded-xl" src="/images/vdp/29.png"/>
+
+
+  </Step>
+
+  <Step title="Save the Report">
+    <p>Save the changes made to the report.</p>
+  </Step>
+
+  <Step title="Attachment will now be rendered in report">
+    <img height="200" className="glass rounded-xl" src="/images/vdp/30.png"/>
+  </Step>
+</Steps>
+
+
+
+
+#### Deleting an Attachment
+
+<Steps>
+  <Step title="Scroll down to attachment Section">
+  </Step>
+
+  <Step title="Click on `Bin` Icon next to each attachment">
+      <img className="glass rounded-xl" src="/images/vdp/28.png"/>
+
+  </Step>
+
+  <Step title="Confirm Deletion:">
+    <p>A confirmation prompt will appear; click "Confirm" to proceed with the deletion.</p>
+  </Step>
+
+  <Step title="Verify Removal:">
+    <p>Upon confirmation, the attachment will be removed from the system.</p>
+  </Step>
+</Steps>
+
+<Tip>If the deleted attachment was used in a report with the text `{ATTACHMENT_ID}`, it will no longer be rendered as an attachment in the report. </Tip>
+
+
+
+
+#### Download an Attachment
+
+<Steps>
+  <Step title="Scroll down to attachment Section">
+  </Step>
+
+  <Step title="Click on `Download` Icon next to attachment you want to download">
+      <img className="glass rounded-xl" src="/images/vdp/28.png"/>
+  </Step>
+
+</Steps>
+
+
+
+
+## Comments
+
+Another important feature of vulnerability report page is comments feature. This serves as a collaborative space where users can engage in discussions, share observations, propose solutions, or ask questions about the vulnerability. This feature enhances communication and teamwork within the security team, facilitating a transparent exchange of information. It acts as a dynamic, real-time conversation platform associated with a particular vulnerability.
+
+<img height="200" className="glass rounded-xl" src="/images/csm/36.png"/>
+
+#### Adding New Comment
+
+Our vulnerability management system enables users to enhance collaboration and communication by seamlessly adding new comments, fostering an environment for sharing insights, updates, and crucial information within reports.
+
+
+<Steps>
+  <Step title="Access Comment Section:">
+    <p>Go to any report and navigate to the Comment Section.</p>
+  </Step>
+  
+  <Step title="Write a New Comment:">
+    <p>Compose your comment in the provided text field.</p>
+  </Step>
+  
+  <Step title="Click Comment Button:">
+    <p>Click the "Comment" button to add your new comment to the report.</p>
+  </Step>
+</Steps>
+
+#### Deleting Comment
+
+Within our system, users have the capability to maintain content accuracy and control by easily deleting their comments. This feature empowers users to refine and adjust their contributions as needed, ensuring precision in vulnerability management documentation.
+
+<Warning> You cannot delete comments that are auto generate by the system or other users</Warning>
+
+<Steps>
+  <Step title="Delete a Comment:">
+    <p>Once your comment is posted, you can delete it.</p>
+  </Step>
+  
+  <Step title="Access Comment Options:">
+    <p>Click on the three dots next to your comment and choose "Delete Comment."</p>
+    <img className="glass rounded-xl" src="/images/vdp/31.png"/>
+  </Step>
+  
+  <Step title="Confirm Deletion:">
+    <p>A confirmation popup will appear on your screen; click "Yes" to confirm the deletion.</p>
+  </Step>
+</Steps>
+
+
+#### Mentioning Others
+
+Our system promotes targeted collaboration and engagement by allowing users to mention others in comments. This functionality triggers notifications, facilitating seamless communication and encouraging the active involvement of specific individuals in critical discussions within the vulnerability management framework.
+
+
+<Steps>
+  <Step title="Scroll down to comments section">
+  </Step>
+  
+  <Step title="Type '@' to Trigger Mention:">
+  </Step>
+  
+  <Step title="Select User and Write Comment:">
+    <p>Click on anyone from the list and continue writing the rest of your comment.</p>
+  </Step>
+
+  <Step title="Click Commit to Post:">
+    <p>Click "Commit" to post the comment, including the mention.</p>
+  </Step>
+</Steps>
+
+
+<Info> The mentioned user will receive a notification indicating that they have been tagged.</Info>
+
+#### Creating blocker for a user.
+
+...
+
+
+<Steps>
+  <Step title="Scroll down to comments section">
+    <p>You can mention others by going to the comment section.</p>
+  </Step>
+  
+  <Step title="Type '@' to Trigger Mention:">
+    
+  </Step>
+  
+  <Step title="Select User and Write Comment:">
+    <p>Click on anyone from the list and continue writing the rest of your comment.</p>
+  </Step>
+
+  <Step title="Click Commit to Post:">
+    <p>Click "Commit" to post the comment, including the mention.</p>
+  </Step>
+</Steps>
+
+
+<Warning> The mentioned user will receive a notification indicating that they have been tagged.</Warning>
