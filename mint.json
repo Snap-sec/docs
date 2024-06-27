@@ -1,9 +1,9 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Snapsec 360",
+  "name": "Snapsec Suite",
   "logo": {
-    "dark": "https://saleemparray.github.io/snapsec/images/logo.svg",
-    "light": "https://saleemparray.github.io/snapsec/images/logo.svg"
+    "dark": "https://snapsec.co/logos/blue-mini.svg",
+    "light": "https://snapsec.co/logos/black-mini.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
@@ -33,22 +33,38 @@
     {
       "name": "Vulnerability Management",
       "url": "products/csm"
+    },
+    {
+      "name": "Phishing Simulator",
+      "url": "products/ps"
+    },
+    {
+      "name": "Secret Scanner",
+      "url": "products/ss"
+    },
+    {
+      "name": "VDP Management",
+      "url": "products/vdp"
+    },
+    {
+      "name": "Employee Training Management",
+      "url": "products/etm"
     }
   ],
   "anchors": [
     {
       "name": "Our Services",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "https://snapsec.co/services.html"
     },
     {
       "name": "Blog",
-      "icon": "slack",
+      "icon": "blog",
       "url": "https://snapsec.co/blog"
     },
     {
       "name": "Contact Us",
-      "icon": "newspaper",
+      "icon": "envelope",
       "url": "https://snapsec.co/contact-us.html"
     }
   ],
@@ -59,7 +75,19 @@
     },
     {
       "group": "Quick Links",
-      "pages": ["products/csm/index","products/csm/articles/getstarted","products/csm/articles/dashboard","products/csm/articles/assessments","products/csm/articles/submit_report","products/csm/articles/list","products/csm/articles/vuln_reports","products/csm/articles/assets","products/csm/articles/report","products/csm/articles/blockers","products/csm/articles/apikey","products/csm/articles/users","products/csm/articles/profile"]
+      "pages": ["products/csm/index","products/csm/articles/dashboard","products/csm/articles/assessmentplanning","products/csm/articles/submit_report","products/csm/articles/list","products/csm/articles/vuln_reports","products/csm/articles/assets","products/csm/articles/report","products/csm/articles/blockers","products/csm/articles/apikey","products/csm/articles/users","products/csm/articles/profile"]
+    },
+    {
+      "group": "Quick Links",
+      "pages": ["products/asm/index","products/asm/articles/dashboard","products/asm/articles/assets","products/asm/articles/scans","products/asm/articles/list","products/asm/articles/employees"]
+    },
+    {
+      "group": "Quick Links",
+      "pages": ["products/ps/index"]
+    },
+    {
+      "group": "Quick Links",
+      "pages": ["products/vdp/index","products/vdp/articles/dashboard","products/vdp/articles/policy","products/vdp/articles/list","products/vdp/articles/vuln_reports","products/vdp/articles/leader","products/vdp/articles/share"]
     }
     
   ],
