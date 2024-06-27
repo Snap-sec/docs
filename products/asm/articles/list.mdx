@@ -1,0 +1,150 @@
+---
+title: 'Vulnerability Lists'
+description: "The Vulnerability Lists page provides a comprehensive overview of all identified vulnerabilities, enabling efficient management and remediation. It features detailed lists, suppression options, filtering, and search capabilities to streamline vulnerability tracking."
+---
+
+## List of Vulnerabilities
+
+The List of Vulnerabilities provides a detailed table with columns for ID, Reported On, Title, Assets, Severity, Status, Sent to VM, and Tags. View all vulnerabilities, click on any to see more details, and update the severity as needed.
+
+<img
+  className="glass rounded-xl"
+  src="/images/asm2/16.png"
+  alt="List of Vulnerabilities"
+/>
+
+<Tip>Click on any vulnerability in the table to view detailed information and update its severity.</Tip>
+
+
+
+**List of table columns in the vulnerability list page:**
+
+| Property        | Description                                         |
+| --------------- | --------------------------------------------------- |
+| **REPORTED ON**     | Date when the vulnerability was reported.            |
+| **TITLE**           | Brief title or description of the reported issue.   |
+| **ASSET**           | An asset Associated with the Vulnerability |
+| **SEVERITY**        | Level of severity assigned to the reported vulnerability (e.g., low, medium, high). |
+| **STATUS**          | Current state of the reported vulnerability (e.g., open, resolved, in progress). |
+| **SENT TO VM**      | * |
+| **OPTIONS**         | Different actions that can be performed on the vulnerability |
+
+
+
+## Filter Vulnerabilities
+
+The Filter Vulnerabilities feature enables you to filter the vulnerability list based on severity. This helps you to see the vulnerabilities of an specific catagory
+
+
+
+
+
+#### Filtering Vulnerabilities
+<Steps>
+  <Step title="Click on Filter Icon">
+        <img className="glass rounded-xl" src="/images/asm/22.png" alt="Filter Vulnerabilities" />
+
+  </Step>
+
+  <Step title="Choose The Severity">
+    <p>Choose the severity you would like to filter for</p>
+    <img className="glass rounded-xl" src="/images/asm/20.png" alt="Filter Vulnerabilities" />
+  </Step>
+
+  <Step title="Click on Apply">
+  </Step>
+
+
+</Steps>
+
+
+
+<Tip>Use filters to quickly find and address vulnerabilities based on their severity.</Tip>
+
+
+
+
+
+
+
+## Suppress Vulnerabilities
+
+The Suppress Vulnerabilities feature allows you to hide specific vulnerabilities that are not relevant to your current focus. Suppressed vulnerabilities will remain hidden from the vulnerability list even if found in other scans.
+
+
+
+#### Suppressing Vulnerabilities
+
+
+<Warning>When you suppress a vulnerability with a specific title in any asset, all vulnerabilities with the same title across all assets will be suppressed as well. This helps to ensure consistent management and reduces clutter by hiding identical vulnerabilities in different locations.</Warning>
+
+<Steps>
+  <Step title="In Options Coulmn, Click on 3 dots next to any vulnerability">
+    <img className="glass rounded-xl" src="/images/asm2/17.png"/>
+  </Step>
+
+  <Step title="Click on Supress">
+  </Step>
+</Steps>
+
+
+
+#### View Suppressed Vulnerabilities
+
+The Show Suppressed Vulnerabilities feature lets you view and manage suppressed vulnerabilities. 
+
+<Steps>
+  <Step title="Click on Eye Icon">
+    <p>Click on the eye icon in the vulnerability list to view suppressed vulnerabilities.</p>
+    <img className="glass rounded-xl" src="/images/asm2/18.png" alt="View Suppressed Vulnerabilities" />
+  </Step>
+  <Step title="This will show only suppressed vulnerabilities">
+  </Step>
+</Steps>
+
+<Warning>When you suppress a vulnerability with a specific title in any asset, all vulnerabilities with the same title across all assets will be suppressed as well. This helps to ensure consistent management and reduces clutter by hiding identical vulnerabilities in different locations.</Warning>
+
+
+
+
+
+
+
+#### UnSuppressing Vulnerabilities
+<Steps>
+  <Step title="Click on Eye Icon">
+    <p>Click on the eye icon in the vulnerability list to view suppressed vulnerabilities.</p>
+    <img className="glass rounded-xl" src="/images/asm2/18.png" alt="View Suppressed Vulnerabilities" />
+  </Step>
+
+  <Step title="Click on 3 Dots">
+    <p>Click on the 3 dots on any suppressed vulnerability and select 'Unsuppress'.</p>
+    <img className="glass rounded-xl" src="/images/asm2/19.png" alt="Unsuppress Vulnerability" />
+  </Step>
+
+  <Step title="Confirm">
+    <p>Click Confirm to unsuppress the selected vulnerability.</p>
+  </Step>
+</Steps>
+
+<p>The vulnerability will return to the main vulnerability list.</p>
+
+
+<Warning>When you unsuppress a single vulnerability, all vulnerabilities with the same title across all assets will be unsuppressed as well. This ensures consistent visibility of vulnerabilities with identical titles.</Warning>
+
+
+
+
+
+
+
+
+## Search Vulnerabilities
+
+The Search Vulnerabilities feature allows you to search for specific vulnerabilities based on their title. This helps in quickly locating and managing particular vulnerabilities.
+
+<img
+  className="glass rounded-xl"
+  src="/images/asm2/20.png"
+  alt="Search Vulnerabilities"
+/>

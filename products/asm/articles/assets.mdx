@@ -1,0 +1,186 @@
+---
+title: 'Asset Catalog'
+description: "The Asset Catalog page consolidates all assets from various sources in one central location. It offers a comprehensive view, streamlining the identification and management of assets for efficient security monitoring and control."
+---
+
+
+## Key Topics
+<CardGroup cols={2}>
+  <Card title="Subdomains" icon="sitemap" href="#subdomains">
+  </Card>
+  <Card title="Webservers" icon="server" href="#webservers">
+  </Card>
+  <Card title="Exposed Code" icon="code" href="#exposed-code">
+  </Card>
+  <Card title="IP Addresses" icon="globe" href="#ip-addresses">
+  </Card>
+  <Card title="Certificates" icon="certificate" href="#certificates">
+  </Card>
+  <Card title="Exposed Code Base" icon="code-branch" href="#exposed-code-base">
+  </Card>
+  <Card title="Ports" icon="plug" href="#ports">
+  </Card>
+  <Card title="Services" icon="cogs" href="#services">
+  </Card>
+  <Card title="Technologies" icon="microchip" href="#technologies">
+  </Card>
+  <Card title="Internal Assets" icon="shield-alt" href="#internal-assets">
+  </Card>
+</CardGroup>
+
+## Subdomains
+
+The Subdomains page lists all subdomains associated with your organization, providing essential information such as status (alive or dead), open ports, and discovered vulnerabilities. This helps in maintaining an up-to-date inventory and addressing potential security issues.
+
+<img
+  className="glass rounded-xl"
+  src="/images/asm2/7.png"
+  alt="Subdomains"
+/>
+
+<Tip>Click on each subdomain to view detailed information and perform targeted scans.</Tip>
+
+### Import Subdomains
+<p>Subdomains are automatically imported from organization domain at the time of OnBoarding</p>
+#### Manually Import Subdomains
+<Steps>
+  <Step title="Click on `Import Subdomains` button`">
+        <img className="glass rounded-xl" src="/images/asm2/21.png"/>
+
+  </Step>
+
+  <Step title="Enter all the subdomains you want import">
+    <p>One subdomain per line</p>
+  </Step>
+
+  <Step title="Click Import">
+  </Step>
+
+
+</Steps>
+
+## Webservers
+
+The Webservers page details all web servers, including their associated domains, status, any identified vulnerabilities, ports and technologies. It ensures that all web servers are accounted for and secure.
+
+<img
+  className="glass rounded-xl"
+  src="/images/asm2/8.png"
+  alt="Webservers"
+/>
+
+<Tip>Monitor web server status and vulnerabilities to prevent potential threats.</Tip>
+
+## Exposed Code
+
+The Exposed Code page identifies instances of publicly accessible code, helping you manage and secure your codebase. It provides details on exposed repositories and any associated vulnerabilities.
+
+<img
+  className="glass rounded-xl"
+  src="/images/asm2/9.png"
+  alt="Exposed Code"
+/>
+
+<Tip>Regularly review and secure exposed code to protect intellectual property and prevent security risks.</Tip>
+
+## IP Addresses
+
+The IP Addresses page lists all IP addresses used by your organization, including details on their usage, open ports, and associated vulnerabilities. This helps in managing network security effectively.
+
+<img
+  className="glass rounded-xl"
+  src="/images/asm2/10.png"
+  alt="IP Addresses"
+/>
+
+<Tip>Keep track of your IP address inventory and monitor for unauthorized access.</Tip>
+
+## Certificates
+
+The Certificates page provides information on all SSL/TLS certificates in use, including their status and expiration dates. It helps in ensuring that all communications are encrypted and secure.
+
+<img
+  className="glass rounded-xl"
+  src="/images/asm2/11.png"
+  alt="Certificates"
+/>
+
+<Tip>Regularly check certificate validity to maintain secure communications.</Tip>
+
+### Import new domain to track their certificates
+<p> You sometimes would want to import new subdomains to track their certificates as well. In ASM you have an option to do so</p>
+<Steps>
+  <Step title="Click on `Import Domains` button`">
+        <img className="glass rounded-xl" src="/images/asm2/22.png"/>
+
+  </Step>
+
+  <Step title="Enter all the domains you want import">
+    <p>One Domain per line</p>
+  </Step>
+
+  <Step title="Click Import">
+  </Step>
+
+
+</Steps>
+
+## Exposed Code Base
+
+The Exposed Code Base page lists all repositories with public access, detailing any discovered vulnerabilities. This helps in securing your codebase from unauthorized access and potential exploits.
+
+<img
+  className="glass rounded-xl"
+  src="/images/asm/11.png"
+  alt="Exposed Code Base"
+/>
+
+<Tip>Review exposed repositories regularly to mitigate security risks.</Tip>
+
+## Ports
+
+The Ports page displays all open ports on your network, along with associated services and vulnerabilities. It aids in managing port security and preventing unauthorized access.
+
+<img
+  className="glass rounded-xl"
+  src="/images/asm2/12.png"
+  alt="Ports"
+/>
+
+<Tip>Monitor open ports to ensure only necessary services are accessible.</Tip>
+
+## Services
+
+The Services page provides an overview of all services running on your network, detailing their status and any vulnerabilities. This ensures that all services are secure and functioning as expected.
+
+<img
+  className="glass rounded-xl"
+  src="/images/asm2/13.png"
+  alt="Services"
+/>
+
+<Tip>Regularly review running services to detect and address potential security issues.</Tip>
+
+## Technologies
+
+The Technologies page lists all technologies used within your organization, including software and hardware, along with any known vulnerabilities. This helps in managing and securing your technology stack.
+
+<img
+  className="glass rounded-xl"
+  src="/images/asm2/14.png"
+  alt="Technologies"
+/>
+
+<Tip>Keep your technology inventory up to date to ensure comprehensive security coverage.</Tip>
+
+## Internal Assets
+
+The Internal Assets page details all assets within your organization's internal network, including their status and vulnerabilities. This helps in maintaining internal network security.
+
+<img
+  className="glass rounded-xl"
+  src="/images/asm2/15.png"
+  alt="Internal Assets"
+/>
+
+<Tip>Monitor internal assets regularly to prevent internal security breaches.</Tip>

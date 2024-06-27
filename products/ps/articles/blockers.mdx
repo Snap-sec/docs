@@ -1,0 +1,200 @@
+---
+title: 'Vulnerability Management - Blockers '
+description: "__Blockers__ in our system function as specialized tasks designed to highlight critical issues or impediments that need immediate attention. Similar to regular tasks, blockers are assigned to specific users within the organization responsible for addressing and resolving them. Each blocker comes with a defined priority level, allowing users to quickly discern the urgency of the issue. Additionally, due dates can be assigned to blockers, ensuring that the responsible parties are aware of the timeline for resolution. This feature aids in efficient task management, streamlining the process of identifying and overcoming obstacles that might impede progress. Blockers play a crucial role in maintaining project momentum by providing a focused and organized approach to addressing high-priority issues within specified timeframes."
+---
+
+
+
+<img
+  className="hidden dark:block"
+  src="/images/d1.png"
+  alt="Main Dashboard"
+/>
+
+
+## On this Page
+<CardGroup cols={2}>
+     <Card title="Introduction" icon="hand" href="#">
+   
+  </Card>
+  <Card title="Unified Vulnerability Repository" icon="arrows-to-circle" href="#organization-overview-graph">
+    
+  </Card>
+  <Card title="Vulnerability Categorization" icon="layer-group" href="#no-vulnerabilities-in-each-state">
+   
+  </Card>
+  <Card title="Status and Severity Tracking" icon="chart-line" href="#top-5-vulnerabilities">
+    
+  </Card>
+  <Card title="Vulnerability Search Feature" icon="searchengin" href="#severity-classification-and-aggregated-cvss-score">
+   
+  </Card>
+
+   <Card title="Sorting and Filtering Capabilities" icon="arrow-up-z-a" href="#upcoming-security-assessments">
+   
+  </Card>
+</CardGroup>
+
+
+<img
+  className="glass rounded-xl"
+  src="/images/csm/7.png"
+  alt="Main Dashboard"
+/>
+
+## Blockers
+### Creating blocker
+<Steps>
+  <Step title="Login to CSM">
+  </Step>
+
+  <Step title="Navigate to blockers feature">
+  </Step>
+
+  <Step title="Click on '+ New Blocker' ">
+  </Step>
+
+  <Step title="Enter all the required information">
+  <p> The information includes __Blocker title__, __Severity__, __Due date__, __Assignee__ and other revelant information in description</p>
+  <Info> Assignee will get notification of blocker </Info>
+  </Step>
+  
+  <Step title="Click on 'Apply' ">
+  </Step>
+
+</Steps>
+
+### Edit blocker
+<Steps>
+  <Step title="Login to CSM">
+  </Step>
+
+  <Step title="Navigate to blockers feature">
+  </Step>
+
+  <Step title="Click on blocker title ">
+  <p> An edit menu will appear on the right-side of wepage</p>
+  </Step>
+
+  <Step title="Make the necessary changes">
+  </Step>
+  
+  <Step title="Click on 'Save' ">
+  </Step>
+
+</Steps>
+
+### Delete blocker
+<Steps>
+  <Step title="Login to CSM">
+  </Step>
+
+  <Step title="Navigate to blockers feature">
+  </Step>
+
+  <Step title="Click on blocker title ">
+  <p> An edit menu will appear on the right-side of wepage</p>
+  </Step>
+
+  <Step title="In the bottom left corner of edit menu, there is a 'delete' icon">
+  </Step>
+  
+  <Step title="Click on the 'Delete' icon and blocker will be deleted. ">
+  </Step>
+
+</Steps>
+
+### Important Blockers
+<p>The __"Important Blockers"__ feature in our vulnerability management platform allows organizations to prioritize and monitor key blockers effortlessly. Users can designate specific blocker as important, and these blockers are prominently displayed at the top of the list for quick access. <br/>This streamlined view enables users to __efficiently track the current status of crucial blockers__ without the need for extensive searches. Information such as __Due date__, __Blocker Title__, and the __Severity__ is readily available for each important blocker. <br/>This feature enhances visibility and facilitates proactive management of blockers, ensuring that users can promptly address the blockers.</p>
+
+#### Mark blocker as important
+<Steps>
+  <Step title="Login to CSM">
+  </Step>
+
+  <Step title="Navigate to blockers feature">
+  </Step>
+
+  <Step title="Click on `Star` Icon next to blocker ">
+  <p> Star icon is on the right side of each blocker</p>
+  </Step>
+  <Step title="The blocker is now marked as important ">
+  </Step>
+
+</Steps>
+
+#### Unmark blocker as important
+<Steps>
+  <Step title="Login to CSM">
+  </Step>
+
+  <Step title="Navigate to blockers feature">
+  </Step>
+
+  <Step title="Click on `Star` Icon next to blocker ">
+  <p> Star icon is on the right side of each blocker</p>
+  </Step>
+  <Step title="The blocker is now Un-marked as important ">
+  </Step>
+
+</Steps>
+
+### Resolving a Blocker
+
+<Steps>
+  <Step title="Login to CSM">
+  </Step>
+
+  <Step title="Navigate to blockers feature">
+  </Step>
+
+  <Step title="Look for a round checkbox or completion indicator associated with the blocker. ">
+  </Step>
+  <Step title="Click on it to mark the blocker as resolved. ">
+  <Info> The resolved blocker will have a Strikethrough to indicate blocker has been resolved</Info>
+  </Step>
+
+</Steps>
+
+### UnResolving a Blocker
+
+<Steps>
+  <Step title="Login to CSM">
+  </Step>
+
+  <Step title="Navigate to blockers feature">
+  </Step>
+
+  <Step title="Look for a round checkbox or completion indicator associated with the blocker. ">
+  <p><Info> The resolved blockers have a Strikethrough </Info></p>
+  </Step>
+  <Step title="Click on it to unResolve the blocker. ">
+  </Step>
+
+</Steps>
+
+
+### Blocker Filters
+The Filters feature allows users to tailor their view based on specific criteria. Filter options include severity levels for targeted analysis, an "Important" filter for high-priority items, "My Blockers" for personalized task management, and filters for distinguishing unresolved and resolved items. These filters streamline user experience, providing a focused and organized approach to navigating and managing data.
+
+#### All Blockers
+<p>This shows all the blockers of organization reagardless of assignee and resolve state</p>
+
+#### Important
+<p>This shows only the blockers that are marked as important</p>
+
+#### Resolved
+<p>This will show only the blockers that are in resolved state</p>
+
+#### UnResolved
+<p>This will show blockers that are unresolved/open</p>
+
+#### Severity Based
+<p>
+This filter lets a user filter blockers based on their severity level. The severities are:
+1. Critical
+2. High
+3. Medium
+4. Low
+5. None
+</p>

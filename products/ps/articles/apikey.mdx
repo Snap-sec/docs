@@ -1,5 +1,5 @@
 ---
-title: 'Manage API KEY '
+title: 'Manage API KEY Phising'
 description: "An API token is a unique and securely generated authentication key that grants access to interact with SnapSec CSM (Cyber Security Management) via API requests. This token serves as a secure credential, allowing external applications or services to manage and interact with the CSM platform programmatically. By including this token in API requests, users can authenticate and authorize actions such as retrieving data, updating configurations, or performing other operations within the SnapSec CSM environment. API tokens provide a convenient and controlled way to enable external systems or scripts to communicate with the CSM platform, ensuring secure and authorized access while facilitating automation and integration with other tools or services."
 ---
 
@@ -7,7 +7,7 @@ description: "An API token is a unique and securely generated authentication key
 
 <img
   className="hidden dark:block"
-  src="/images/csm2/27.png"
+  src="/images/csm/43.png"
 />
 
 
@@ -37,13 +37,13 @@ description: "An API token is a unique and securely generated authentication key
   <Step title="Navigate to settings">
   </Step>
 
-  <Step title="Navigate to 'API Key' tab"> 
-  <img className="glass rounded-xl" src="/images/csm2/28.png"/>
+  <Step title="Click on 'API Key' option"> 
+  <img className="glass rounded-xl" src="/images/csm/14.png"/>
   </Step>
 
   <Step title="Click on 'Refresh Button' next to API key:">
     <p>This will generate an API key. The generated API key will be shown Text Box</p>
-    <img className="glass rounded-xl" src="/images/csm2/29.png"/>
+    <img className="glass rounded-xl" src="/images/csm/15.png"/>
   </Step>
 
   <Step title="API Key has been generated and can be used.">
@@ -58,9 +58,25 @@ description: "An API token is a unique and securely generated authentication key
 
 #### Revoke API Key
 
-<p> Old API key can be revoked by generating a new API Key. </p>
-<p> Follow the same steps [here](/products/csm/articles/apikey#generate-an-api-key) to generate new API key and discard Old Key</p>
+<Steps>
+  <Step title="Login to CSM">
+  </Step>
 
+  <Step title="Navigate to settings">
+    <p>Click on create assessment button on the right side of assessment page</p>
+  </Step>
+
+  <Step title="Click on 'API Key' option">
+  <img height="50" className="glass rounded-xl" src="/images/csm/14.png"/>
+  </Step>
+
+  <Step title="Click on 'Refresh Button' next to API key:">
+    <p>This will generate a new API key and access to old API key will be revoked</p>
+    <img className="glass rounded-xl" src="/images/csm/15.png"/>
+  </Step>
+
+</Steps>
+<Warning>Access to old API Key has now been revoked.</Warning>
 
 
 

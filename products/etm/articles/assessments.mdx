@@ -5,7 +5,7 @@ description: "The Assessments feature in our vulnerability management product of
 
 <img
   className="hidden dark:block"
-  src="/images/csm2/6.png"
+  src="/images/csm/38.png"
 />
 
 
@@ -50,16 +50,14 @@ The First step towards the scheduling an assessemnt is to create it. Following a
 
   <Step title="Accessing assessment planner page">
     <p>Click on create assessment button on the right side of assessment page</p>
-    <img className="glass rounded-xl" src="/images/csm2/7.png"/>
+    <img className="glass rounded-xl" src="/images/csm/39.png"/>
   </Step>
 
   <Step title="Entering neccessary information">
-  <img className="glass rounded-xl" src="/images/csm2/8.png"/>
-  <p>
-   
+  <img className="glass rounded-xl" src="/images/csm/48.png"/>
+    <p>
+    <li>
     <u>__Plan Type:__</u> This field denotes the type of assessment an organization is planning. It could be **Single Assessment** or **Continious security testing** 
-
-    <img className="glass rounded-xl" src="/images/csm2/9.png"/>
 
     <AccordionGroup>
   <Accordion title="Single Assessment">
@@ -72,12 +70,18 @@ The First step towards the scheduling an assessemnt is to create it. Following a
     Continuous security assessment, on the other hand, is an ongoing and dynamic approach to evaluating and maintaining the security of an organization or system. Unlike a single assessment, continuous assessments involve regular and frequent testing at predetermined intervals, such as weekly or monthly. The frequency of testing and the number of testing days per test are specified to ensure consistent monitoring.
   </Accordion>
 </AccordionGroup>
+</li>
 
-<li><u>__Assessment Duration:__</u> This determines how many years will the assessment be active. 
-<Info> Currently we offer upto two years of assessment </Info></li>
-<li><u>__Frequency:__</u> This determines the the rate at which security testing is conducted during an active assessment. <br/>
+<li>
+<u>__Assessment Duration:__</u> This determines how many years will the assessment be active. 
+<Info> Currently we offer upto two years of assessment </Info>
+</li>
+
+<li>
+<u>__Frequency:__</u> This determines the the rate at which security testing is conducted during an active assessment. <br/>
 Organizations have the flexibility to customize the testing interval based on their security needs. They can opt for either a **monthly** or **weekly** security testing frequency, depending on their risk tolerance, operational requirements, and the dynamic nature of their systems.<br/>
-Organizations have the further ability to determine the interval between each assessment. Giving them power to precisely schedule an assessment.</li>
+Organizations have the further ability to determine the interval between each assessment. Giving them power to precisely schedule an assessment.
+</li>
     
 <li><u>__Number of Days:__</u> This determines the duration for which the test must be performed on each specified test date. This parameter sets the timeframe during which security professionals or automated tools actively assess the system, network, or application for vulnerabilities and weaknesses. The duration is a critical factor in determining the thoroughness of the assessment, allowing for a comprehensive analysis of the security posture within the specified time window. Adjusting the number of days can impact the depth of the assessment, ensuring that the evaluation is robust and aligns with the security requirements and objectives of the organization.</li>
     
@@ -89,8 +93,6 @@ Organizations have the further ability to determine the interval between each as
   <Step title="Calculation:">
     <p>Click on the **"Calculate"** button. This will provide you an overview of number of tests for this assessment and how long will each test last, depending on the information provided. This will give you an overall image of what you will be expencting throuout this assessment</p>
   </Step>
-
-  <img className="glass rounded-xl" src="/images/csm2/10.png"/>
 
   <Step title="Finalising Assessment:">
     <p>Click on the **"Finish"** button. After you review the assessment schedule details and do not have any changes to make we finilize the assessment and it will show up in assessments page.</p>
@@ -106,12 +108,12 @@ Organizations have the further ability to determine the interval between each as
   </Step>
 
   <Step title="Click on 'Edit' icon next to assessment with 'To be scheduled' status ">
-  <img className="glass rounded-xl" src="/images/csm2/11.png"/>
+  <img className="glass rounded-xl" src="/images/csm/49.png"/>
   </Step>
 
   <Step title="Edit menu:">
     <p>An edit menu will pop-up with different options we can configure.</p>
-    <img className="glass rounded-xl" src="/images/csm2/12.png"/>
+    <img className="glass rounded-xl" src="/images/csm/50.png"/>
   </Step>
 
   <Step title="Choose Appropriate Assessment name">
@@ -154,6 +156,10 @@ Organizations have the further ability to determine the interval between each as
   <Step title="Click on 'Edit' icon next to assessment">
   </Step>
 
+  <Step title="Edit menu:">
+    <p>An edit menu will pop-up.</p>
+  </Step>
+
   <Step title="Make appropriate changes">
   </Step>
 
@@ -169,7 +175,7 @@ Organizations have the further ability to determine the interval between each as
   </Step>
 
   <Step title="Click on delete icon next to assessment you want to delete">
-  <img className="glass rounded-xl" src="/images/csm2/11.png"/>
+  <img className="glass rounded-xl" src="/images/csm/60.png"/>
 
   </Step>
 
@@ -225,10 +231,12 @@ Test duration refers to the specific time period allocated for conducting a secu
 
 #### Edit test Duration
 
-<Warning> Duration cannot be modified in running or finished assessments</Warning>
-
 <Steps>
   <Step title="Click on edit icon next to assessment">
+  </Step>
+
+  <Step title="Edit menu:">
+    <p>An edit menu will pop-up with different options we can configure.</p>
   </Step>
 
   <Step title="Specify number of days:">
@@ -250,6 +258,10 @@ Assessment collaboration is a feature that enables users to work together on a s
   <Step title="Click on 'Edit' Icon next to assessment">
   </Step>
 
+  <Step title="Edit menu:">
+    <p>An edit menu will pop-up with different options we can configure.</p>
+  </Step>
+
   <Step title="Selecting collaborators">
     <p>Click on text-box below 'Select collaborator' option. CSM will automatically list all the team members in organization. Click on team members you want to add as collaborators.</p>
   </Step>
@@ -266,6 +278,10 @@ Assessment scope defines the boundaries, objectives, and specific parameters of 
 #### Configuring assessment Scopes.
 <Steps>
   <Step title="Click on 'Edit' Icon next to assessment">
+  </Step>
+
+  <Step title="Edit menu:">
+    <p>An edit menu will pop-up with different options we can configure.</p>
   </Step>
 
   <Step title="Selecting Scopes">
@@ -287,9 +303,10 @@ Assessment report provides a comprehensive overview of the security assessment f
   <Step title="Navigate to 'Assesments' page ">
   </Step>
   <Step title="Click On Assessment name for which you want see the analytics">
+  <img className="glass rounded-xl" src="/images/csm/51.png"/>
   </Step>
   <Step title="This is will open dashboard with only the data of selected assessment">
-  <img className="glass rounded-xl" src="/images/csm2/13.png"/>
+  <img className="glass rounded-xl" src="/images/csm/52.png"/>
   </Step>
 </Steps>
 

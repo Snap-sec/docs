@@ -7,19 +7,42 @@ description: "The Assets feature in our system provides a comprehensive overview
 
 <img
   className="hidden dark:block"
-  src="/images/csm2/14.png"
+  src="/images/csm/16.png"
   alt="Assets"
 />
+
+
+## On this Page
+<CardGroup cols={2}>
+     <Card title="Introduction" icon="readme" href="#">
+   
+  </Card>
+  <Card title="Assets Overview" icon="eye" href="#assets-overview">
+    
+  </Card>
+  <Card title="Addding Assets" icon="plus" href="#adding-assets">
+   
+  </Card>
+  <Card title="Deleting Assets" icon="trash" href="#deleting-assets">
+    
+  </Card>
+  <Card title="Scheduling assessment for asset" icon="calendar-days" href="#scheduling-assesment-for-asset">
+   
+  </Card>
+
+   <Card title="Important Assets" icon="star" href="#important-assets">
+   
+  </Card>
+</CardGroup>
+
 
 ### Assets Overview
 The Assets List page consolidates all assets of organization in one central location. It offers an eagle-eye view of all assets and provides efficient management of assets.
 
-<Info> Starred assets will always be on top of list</Info>
-
 #### Numerical assets overview
 This provides the comprehensive numerical overview of organization assets.
 
-<img height="200" className="glass rounded-xl" src="/images/csm2/15.png"/>
+<img height="200" className="glass rounded-xl" src="/images/csm/13.png"/>
 
 | Property        | Description                                         |
 | --------------- | --------------------------------------------------- |
@@ -33,17 +56,16 @@ This provides the comprehensive numerical overview of organization assets.
 #### Columns in assets overview
 **List of table columns in the assets list page:**
 
-<img height="200" className="glass rounded-xl" src="/images/csm2/16.png"/>
+<img height="200" className="glass rounded-xl" src="/images/csm/17.png"/>
 
 | Property        | Description                                         |
 | --------------- | --------------------------------------------------- |
 | **#ID**                               | This is the serial number of assets.  |
 | **Asset Name**                        | The actual name/address of asset. <br/><i>Important assets have "Star" icon next to them</i>|
-| **Remediation Process**               | *   |
+| **Last Tested**                       | Date when the asset was last tested   |
 | **Open Vulnerabilities**              | Number of Open vulnerabilities for each assset. |
 | **Closed Vulnerabilities**            | Number of Close vulnerabilities for each assset. |
-| **Last Tested**                       | Date when the asset was last tested   |
-| **Actions**                           | Different actions that can be performed on the asset   |
+| **Risk Status**                       | Level of security risk of each asset based on open vulnerabilities and if the asset was recently tested. |
 
 
 
@@ -59,8 +81,6 @@ Adding assets to our platform is a flexible and efficient process, offering two 
 Whether opting for manual input or automated retrieval, our asset addition process caters to diverse organizational needs, offering a seamless experience for managing and securing your digital infrastructure.
 </p>
 
-<Warning> Newly imported assets will be shown on the last page</Warning>
-
 #### Manually adding assets
 <Steps>
   <Step title="Login to CSM">
@@ -71,7 +91,7 @@ Whether opting for manual input or automated retrieval, our asset addition proce
   </Step>
 
   <Step title="Click on '3 dots' in the top right corner">
-  <img height="200" className="glass rounded-xl" src="/images/csm2/17.png"/>
+  <img height="200" className="glass rounded-xl" src="/images/csm/18.png"/>
   </Step>
 
   <Step title="Click on 'Import Assets' ">
@@ -79,8 +99,7 @@ Whether opting for manual input or automated retrieval, our asset addition proce
   </Step>
 
   <Step title="Enter all the assets you want to add.">
-    <Warning>Insert only one asset per line. </Warning>
-  <img className="glass rounded-xl" src="/images/csm2/18.png"/>
+  <Warning>Insert only one asset per line. </Warning>
   </Step>
   
   <Step title="Click on 'Import Assets' ">
@@ -101,7 +120,7 @@ Whether opting for manual input or automated retrieval, our asset addition proce
   </Step>
 
   <Step title="Click on 'Try fetching assets' ">
-  <img height="200" className="glass rounded-xl" src="/images/csm2/17.png"/>
+  <img height="200" className="glass rounded-xl" src="/images/csm/19.png"/>
   </Step>
 
   <Step title="CSM will now automatically fetch and add assets">
@@ -123,11 +142,12 @@ Whether opting for manual input or automated retrieval, our asset addition proce
     <p>The URL is: https://snapsec.co/csm/assets</p>
   </Step>
 
-  <Step title="In actions column, click on '3 dots' next to asset for which you want to schedule assessment">
-  <img className="glass rounded-xl" src="/images/csm2/19.png"/>
+  <Step title="Click on '3 dots' next to asset for which you want to schedule assessment">
+  <img height="200" className="glass rounded-xl" src="/images/csm/20.png"/>
   </Step>
 
   <Step title="Click on 'Schedule assessment' ">
+  <img height="200" className="glass rounded-xl" src="/images/csm/21.png"/>
   <p> This will open assessment planner page.<br/> To know about more on how to plan assessment Click [here](http://localhost:8000/products/csm/articles/assessments#creating-assessments)</p>
 
   </Step>
@@ -150,7 +170,7 @@ Whether opting for manual input or automated retrieval, our asset addition proce
   </Step>
 
   <Step title="Click on '3 dots' next to asset you want to mark as important">
-  <img className="glass rounded-xl" src="/images/csm2/19.png"/>
+  <img height="200" className="glass rounded-xl" src="/images/csm/22.png"/>
   </Step>
 
   <Step title="Click on 'Mark as important' ">
