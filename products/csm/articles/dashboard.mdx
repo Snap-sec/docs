@@ -1,121 +1,113 @@
 ---
 title: 'Dashboard'
-description: "The SnapSec 360 dashboard page provides a holistic view of your organization's security landscape. Through visual graphs and key metrics, it offers insights into the distribution of open and closed vulnerabilities, the number of vulnerabilities in different states, and the top open vulnerabilities. Additionally, the dashboard presents the aggregated Common Vulnerability Scoring System (CVSS) score for the entire organization and highlights upcoming security assessments. This tool is designed to empower organizations in prioritizing and addressing security vulnerabilities efficiently. It showcases real-time insights, vulnerability metrics, collaboration updates, and executive summaries for informed decision-making and proactive security measures."
+description: "The SnapSec Vulnerability Management Dashboard serves as the central hub for understanding and managing an organization's security posture. It provides a comprehensive, at-a-glance view of your vulnerability landscape through visual graphs, key metrics, and actionable insights. This tool is designed to help organizations efficiently prioritize, track, and address security vulnerabilities."
 ---
 
-<img
-  className="glass rounded-xl"
-  src="/images/csm2/dash.png"
-  alt="Main Dashboard"
-/>
-
+<img className="glass block dark:hidden rounded-xl" src="/images/csm/dashboard.png" alt="Main Dashboard"/>
+<img className="glass hidden dark:block rounded-xl" src="/images/csm/dashboard_dark.png" alt="Main Dashboard"/>
 
 ## Key Benefits
-- __Efficient Prioritization:__ Users can quickly identify and prioritize vulnerabilities based on severity and potential impact.
-- __Progress Tracking:__ The dashboard allows monitoring the status of vulnerability remediation efforts over time.
-- __Risk Assessment:__ The aggregated CVSS score provides a quantitative measure of the organization's security risk.
-- __Proactive Planning:__ Awareness of upcoming security assessments allows the organization to prepare adequately, reducing the likelihood of surprises during testing.
+- __Efficient Prioritization:__ Quickly identify and focus on the most critical vulnerabilities.
+- __Progress Tracking:__ Monitor the status and effectiveness of your remediation efforts.
+- __Risk Assessment:__ Understand your overall security risk through aggregated scoring.
+- __Proactive Planning:__ Stay prepared for upcoming security testing and assessments.
 
+## Dashboard Components
 
+The SnapSec 360 Dashboard is composed of several key elements, each providing specific insights into your security operations:
 
-
-
-
-
-
-## On This Page
-<CardGroup cols={2}>
-     <Card title="Introduction" icon="Readme" href="#">
-   
+<CardGroup cols={3}>
+  <Card title="Vulnerability States" icon="chart-bar" href="#vulnerability-states-top-center">
+    Current status summary
   </Card>
-  <Card title="Organization Overview" icon="sitemap" href="#organization-overview-graph">
-    
+  <Card title="Vulnerabilities Trend" icon="chart-line" href="#vulnerabilities-trend">
+    Detection and remediation over time
   </Card>
-  <Card title="Vulnerability states" icon="chart-bar" href="#number-of-vulnerabilities-in-each-state">
-   
+  <Card title="Severity Distribution" icon="pie-chart" href="#severity-distribution-left-panel-below-vulnerability-states">
+    Risk level breakdown
   </Card>
-  <Card title="Top 5 Vulnerabilities" icon="list-ol" href="#top-5-vulnerabilities">
-    
+  <Card title="Top Performing Members" icon="users" href="#top-performing-members-left-panel-below-severity-distribution">
+    Security contributors
   </Card>
-  <Card title="Classification and Aggregated Score" icon="ranking-star" href="#severity-classification-and-aggregated-cvss-score">
-   
+  <Card title="Top Performing Assessments" icon="clipboard-list" href="#top-performing-assessments">
+    Recent assessment overview
   </Card>
-
-   <Card title="Upcoming Security Assessments" icon="clock-rotate-left" href="#upcoming-security-assessments">
-   
+  <Card title="Top 5 Vulnerabilities" icon="shield-exclamation" href="#top-5-vulnerabilities">
+    Critical security threats
   </Card>
 </CardGroup>
 
+{/* ### Top Navigation Bar (Upper Right Corner)
+Icons include functionalities such as search, notifications, help/support, user profile management, and a global application menu. These allow users to quickly navigate, find information, and manage their account settings.
+
+### Main Navigation Bar (Left Side)
+Provides access to different modules within the SnapSec 360 platform, such as Dashboard (current view), Reports, Assets, Vulnerabilities, Scans, Remediation, Settings, Users, and Integrations. This allows users to navigate to specific areas for detailed management and analysis. */}
+
+### Vulnerability States (Top Center)
+These cards provide a high-level summary of the current vulnerability status:
+
+<div className="flex flex-row items-start justify-between gap-2 flex-wrap">
+  <div className="text-left max-w-md space-y-2">
+    <p><strong>In Review:</strong> The number of vulnerabilities currently being analyzed or investigated.</p>
+    <p><strong>Resolved:</strong> The number of vulnerabilities that have been successfully fixed.</p>
+    <p><strong>In Progress:</strong> The number of remediation efforts that are currently underway.</p>
+    <p><strong>Unresolved:</strong> The number of identified vulnerabilities that have not yet been addressed.</p>
+    <p><strong>False Positive:</strong> The number of identified issues that have been determined to not be actual vulnerabilities.</p>
+    <p><strong>Retest:</strong> The number of vulnerabilities that require re-evaluation to confirm successful remediation.</p>
+  </div>
+
+  <div className="flex-shrink-0">
+    <img className="glass rounded-xl block dark:hidden" src="/images/csm/stats.png" alt="Vulnerability States" width="230" />
+    <img className="glass  rounded-xl hidden dark:block" src="/images/csm/stats_dark.png" alt="Vulnerability States (dark mode)" width="230" />
+  </div>
+</div>
 
 
+### Severity Distribution (Left Panel - Below Vulnerability States)
+<div className="flex flex-row items-start justify-between gap-2 flex-wrap">
+  <div className="text-left max-w-md space-y-2">
+    Illustrates the breakdown of identified vulnerabilities based on their severity level. Displays the total number of vulnerabilities and a visual representation showing the count of vulnerabilities classified as Critical, High, Medium, and Low. This helps understand the overall risk exposure.
+    <ul className="">
+      <li><strong>Critical</strong> (Red): Vulnerabilities requiring immediate attention that could lead to system compromise with minimal effort.</li>
+      <li><strong>High</strong> (Orange): Serious vulnerabilities that should be addressed in short-term remediation planning.</li>
+      <li><strong>Medium</strong> (Yellow): Moderate risk issues that should be included in regular remediation cycles.</li>
+      <li><strong>Low</strong> (Green): Minor security concerns that pose minimal risk but should still be tracked.</li>
+    </ul>
+  </div>
+
+ <div className="flex-shrink-0">
+<img className="glass rounded-xl block dark:hidden" width={'230px'} src="/images/csm/severity.png" alt="Severity Distribution" />
+<img className="glass rounded-xl hidden dark:block " width={'230px'} src="/images/csm/severity_dark.png" alt="Severity Distribution" />
+</div>
+</div>
+### Vulnerabilities Trend
+Shows the evolution of the number of detected and resolved vulnerabilities over a specific period. A line graph typically plots the number of 'Detected' vulnerabilities and 'Remediated' vulnerabilities over time, allowing users to track the effectiveness of their vulnerability management program.
+
+<img className="glass rounded-xl block dark:hidden" src="/images/csm/graph.png" alt="Vulnerabilities Trend" />
+<img className="glass rounded-xl hidden dark:block " src="/images/csm/graph_dark.png" alt="Vulnerabilities Trend" />
+
+### Top Performing Members (Left Panel - Below Severity Distribution)
+Highlights users or teams who have made significant contributions to vulnerability remediation efforts. Lists individuals (e.g., Imramdemo Imramdemo, Naik Mubashir) and indicates the number of issues they have resolved. This can help identify and acknowledge effective security contributors.
+
+<img className="glass rounded-xl block dark:hidden" width={'200px'} src="/images/csm/top_members.png" alt="Top Performing Members" />
+<img className="glass rounded-xl hidden dark:block" width={'200px'} src="/images/csm/top_members_dark.png" alt="Top Performing Members" />
+
+### Top Performing Assessments
+Provides an overview of recent or significant vulnerability assessments. Presents a table with information on different assessments (e.g., Web Application Pentesting, CSPM - Cloud Security, VDP Reports, Mobile Application Pentesting), their remediation status, assigned collaborators, and due dates.
+
+<img className="glass rounded-xl block dark:hidden" src="/images/csm/top_assessments.png" alt="Top Performing Assessments"/>
+<img className="glass rounded-xl hidden dark:block" src="/images/csm/top_assessments_dark.png" alt="Top Performing Assessments"/>
+
+### Top 5 Vulnerabilities
+
+Identify and prioritize critical security threats with the Top 5 Vulnerabilities feature. Lists the most critical or high-priority vulnerabilities that require immediate attention, displaying a table with key information including their title, assigned owner, the assessment they belong to, their current state, severity level, and when they were reported. A search function allows for filtering this list.
+
+<img className="glass rounded-xl block dark:hidden" src="/images/csm/top5_vulns.png" alt="Top 5 Vulnerabilities" />
+<img className="glass rounded-xl hidden dark:block " src="/images/csm/top5_vulns_dark.png" alt="Top 5 Vulnerabilities" />
 
 
+### Download Our Vulnerability Management Guide Today 
+Encourages users to access a resource that provides strategic guidance on vulnerability management practices. It offers a brief description of the guide's content and a "Download" button to access the document, typically including a visual representation of the guide.
 
-
-## Organization Overview Graph
-
-<img
-  className="glass rounded-xl"
-  src="/images/csm2/1.png"
-  alt="Main Dashboard"
-/>
-
-
-
-The graph presents a visual representation of open and closed vulnerabilities categorized by severity. Quickly assess your security posture, prioritize remediation efforts, and track improvements effortlessly.
-
-
-## Vulnerability States
-
-<img
-  className="glass rounded-xl"
-  src="/images/csm2/2.png"
-  alt="Main Dashboard"
-/>
-
-
-
-Easily monitor the status of vulnerabilities with a breakdown of those open, resolved, or in progress. Gain immediate insights into the effectiveness of your security response and ongoing remediation efforts.
-
-
-
-<Tip>Click on any state to view all the vulnerabilities of that status.</Tip>
-
-
-## Top 5 Vulnerabilities
-
-<img
-  className="glass rounded-xl"
-  src="/images/csm2/3.png"
-  alt="Main Dashboard"
-/>
-
-Identify and prioritize critical security threats with the Top 5 Vulnerabilities feature. Quickly focus on the most pressing issues, enabling swift decision-making and targeted mitigation actions.
-
-
-## Severity Classification and Aggregated CVSS Score
-<img
-  className="glass rounded-xl"
-  src="/images/csm2/4.png"
-  alt="Main Dashboard"
-/>
-
-
-Classify vulnerabilities based on severity levels and assess their overall impact with an aggregated Common Vulnerability Scoring System (CVSS) score. Streamline prioritization and resource allocation for effective risk mitigation.
-
-
-
-## Upcoming Security Assessments
-<img
-  className="glass rounded-xl"
-  src="/images/csm2/5.png"
-  alt="Main Dashboard"
-/>
-
-
-Stay ahead of security testing activities with a snapshot of upcoming assessments. Plan and prepare for testing activities efficiently, ensuring a proactive and organized approach to continuous security improvement within your organization.
-
-
-
-
-
+<img className="glass rounded-xl block dark:hidden" src="/images/csm/guide.png" alt="Vulnerability Management Guide" height={'200px'} />
+<img className="glass rounded-xl  hidden dark:block " src="/images/csm/guide_dark.png" alt="Vulnerability Management Guide" height={'200px'} />
