@@ -1,90 +1,152 @@
 ---
-title: 'Vulnerability Management'
-description: 'Start building awesome documentation in under 5 minutes'
+title: 'Vulnerabilities'
+description: 'Centralized management and tracking of security weaknesses across your organization'
 ---
 
+<img className="glass block dark:hidden rounded-xl" src="/images/csm/vulnerabilities.png" alt="Vulnerabilities Dashboard"/>
+<img className="glass hidden dark:block rounded-xl" src="/images/csm/vulnerabilities_dark.png" alt="Vulnerabilities Dashboard"/>
 
-<img
-  className="hidden dark:block"
-  src="/images/d1.png"
-  alt="Main Dashboard"
-/>
+## Overview
 
+The Vulnerabilities page provides a detailed and comprehensive list of all identified security weaknesses across your assets. It serves as your primary hub for deep-diving into individual vulnerabilities, assessing their details, tracking their status, and managing remediation efforts. This page allows security teams to efficiently review, filter, and prioritize findings to ensure timely resolution.
 
-## Introduction
+## Key Features
 
-Introducing SnapSec, your premier partner in cybersecurity excellence. In today's dynamic digital landscape, our Continuous Security and Management System redefine security standards. Empower your organization with real-time vulnerability identification, collaborative access management, and customizable assessments. Our cloud-based platform offers unparalleled convenience, ensuring you stay ahead of threats. With executive reports, unlimited team collaboration, and a commitment to cost-effectiveness, SnapSec delivers peace of mind and robust protection for your critical assets.
+- **Comprehensive Listing**: View all vulnerabilities across your organization in one place
+- **Advanced Filtering**: Quickly narrow down findings based on multiple criteria
+- **Status Tracking**: Monitor the remediation progress of each vulnerability
+- **Severity Classification**: Prioritize issues based on their impact and exploitability
+- **Ownership Assignment**: Delegate responsibility and accountability for resolution
 
+## Page Components
 
-### Key Features
-
-<AccordionGroup>
-  <Accordion icon="repeat" title="Continuous Security Monitoring:">
-
-Proactively identifies and addresses vulnerabilities in real-time, ensuring ongoing protection and resilience against evolving cybersecurity threats for your organization.
-</Accordion>
-<Accordion icon="people-group" title="Collaborative Access Management:">
-
-Fosters efficient teamwork by allowing flexible access permissions, facilitating secure information sharing, and streamlining collaborative efforts for effective vulnerability management.
-</Accordion>
-<Accordion icon="leaf" title="Customizable Assessment Planning:">
-
-Tailor security assessments to specific needs, defining scope, objectives, and parameters. Efficiently schedule, plan, and execute assessments to enhance overall security testing activities.
-</Accordion>
-<Accordion icon="file-contract" title="Comprehensive Vulnerability Reports:">
-
-Empowers users to generate customized reports, offering a detailed overview of the organization's security posture. Facilitates informed decision-making and communication with key stakeholders.
-</Accordion>
-<Accordion icon="bell" title="Real-time Notifications:">
-
-Keeps users informed about security events and vulnerabilities instantly. Enables swift response and mitigation, ensuring proactive measures against potential cyber threats in real-time.
-</Accordion>
-<Accordion icon="user-tie" title="Executive Reports for Decision Makers:">
-
-Provides concise and insightful executive reports. Highlights key metrics and insights relevant to decision-makers, aiding in making informed decisions to strengthen overall security measures.
-</Accordion>
-<Accordion icon="cloud" title="Cloud-Based Convenience:">
-
-Ensures flexibility and accessibility with a cloud-based system. Securely access security management tools from anywhere, anytime, enhancing convenience and adaptability for users across different locations.
-</Accordion>
-<Accordion icon="people-carry-box" title="Unlimited Team Collaboration:">
-
-Promotes efficient teamwork by inviting an unlimited number of team members. Facilitates collaboration, knowledge sharing, and information exchange without restrictions, enhancing overall security response efforts.
-</Accordion>
-</AccordionGroup>
-
-
-
-## Documentation
-
-Add content directly in your files with MDX syntax and React components. You can use any of our components, or even build your own.
-
-<CardGroup>
-
-<Card title="Introduction" icon="paintbrush" href="intro">
-  Add flair to your docs with personalized branding.
-</Card>
-
-<Card title="Assessment Planning" icon="paintbrush" href="/settings/global">
-  Add flair to your docs with personalized branding.
-</Card>
-
-
-<Card title="Dashboard" icon="paintbrush" href="/settings/global">
-  Add flair to your docs with personalized branding.
-</Card>
-
-<Card title="Vulnerability List" icon="paintbrush" href="/settings/global">
-  Add flair to your docs with personalized branding.
-</Card>
-
-<Card title="Vulnerability Reports" icon="paintbrush" href="/settings/global">
-  Add flair to your docs with personalized branding.
-</Card>
-
-<Card title="Team Collaboration" icon="paintbrush" href="/settings/global">
-  Add flair to your docs with personalized branding.
-</Card>
-
-
+<CardGroup cols={2}>
+  <Card title="Status Summary" icon="chart-bar" href="#vulnerability-status-summary-cards">
+    Current vulnerability state overview
+  </Card>
+  <Card title="Search & Filters" icon="filter" href="#search-and-filter-bar">
+    Find and refine vulnerability listings
+  </Card>
+  <Card title="Vulnerability Table" icon="table" href="#vulnerability-list-table">
+    Detailed listing of all security findings
+  </Card>
+  <Card title="Customization" icon="sliders" href="#columns-selector">
+    Personalize your vulnerability view
+  </Card>
 </CardGroup>
+
+### Vulnerability Status Summary Cards
+
+These cards offer a quick quantitative summary of vulnerabilities based on their current status across the entire list.
+
+<div className="flex flex-row items-start justify-between gap-2 flex-wrap">
+  <div className="text-left max-w-md space-y-2">
+    <p><strong>In Review (23)</strong>: Number of vulnerabilities currently undergoing analysis or awaiting assignment.</p>
+    <p><strong>In Progress (10)</strong>: Number of vulnerabilities for which remediation or mitigation efforts have begun.</p>
+    <p><strong>False Positive (0)</strong>: Number of identified issues that have been confirmed as not being genuine vulnerabilities.</p>
+    <p><strong>Non Applicable (2)</strong>: Number of vulnerabilities deemed not relevant or applicable to the specific asset or context.</p>
+    <p><strong>Resolved (3)</strong>: Number of vulnerabilities that have been successfully remediated and closed.</p>
+  </div>
+
+  <div className="flex-shrink-0">
+    <img className="glass rounded-xl block dark:hidden" src="/images/csm/vuln_status.png" alt="Vulnerability Status Cards" width="650"/>
+    <img className="glass rounded-xl hidden dark:block" src="/images/csm/vuln_status_dark.png" alt="Vulnerability Status Cards" width="650"/>
+  </div>
+</div>
+
+
+
+### Search and Filter Bar
+
+Enables users to quickly find specific vulnerabilities and narrow down the list based on various criteria.
+
+<img className="glass rounded-xl block dark:hidden" src="/images/csm/filter_dark.png" alt="Search and Filter Bar" />
+<img className="glass rounded-xl hidden dark:block"  src="/images/csm/filter.png" alt="Search and Filter Bar" />
+
+#### Filter Components
+
+- **Search Box (Q Search...)**: Allows free-text search across vulnerability titles, descriptions, or other relevant fields.
+- **Severity Filter**: Filters vulnerabilities by their criticality (e.g., Critical, High, Medium, Low, None).
+- **Assessments Filter**: Filters vulnerabilities based on the assessment in which they were identified.
+- **Owners Filter**: Filters vulnerabilities by the assigned owner responsible for their remediation.
+- **State Filter**: Filters vulnerabilities by their current status (e.g., In Review, In Progress, Resolved, Retest).
+
+<Tip>Use multiple filters simultaneously to create highly specific views for different remediation workflows.</Tip>
+
+### Columns Selector
+
+<img className="glass rounded-xl block dark:hidden" src="/images/csm/columns_selector.png" alt="Columns Selector" width="250" />
+<img className="glass rounded-xl hidden dark:block" src="/images/csm/columns_selector_dark.png" alt="Columns Selector" width="250" />
+
+This feature allows you to customize which columns are displayed in the vulnerability list table, tailoring the view to your specific needs. Click the "Columns" button on the right side of the filter bar to:
+
+- Show or hide specific data points
+- Rearrange column order
+- Resize columns for better visibility
+- Save custom views for future use
+
+### Vulnerability List Table
+
+This is the core component displaying a detailed list of all identified vulnerabilities. Each row represents a unique vulnerability instance.
+
+<img className="glass block dark:hidden rounded-xl" src="/images/csm/vuln_table.png" alt="Vulnerability Table" />
+<img className="glass hidden dark:block rounded-xl" src="/images/csm/vuln_table_dark.png" alt="Vulnerability Table" />
+
+#### Table Columns
+
+| Column | Description | Example |
+|--------|-------------|---------|
+| Title | A concise description of the vulnerability | "HTTP Missing Security Headers", "XSS in Dashboard" |
+| Owner | Individual or team assigned to resolve the vulnerability | "John Doe", "Security Team", "No Owner" |
+| Assessment Name | Security assessment or scan that identified the vulnerability | "Web Application Pentest", "Cloud Security Assessment" |
+| State | Current status of the vulnerability (often color-coded) | "In Review", "In Progress", "Resolved" |
+| Severity | Impact level of the vulnerability | "Critical", "High", "Medium", "Low" |
+| Reported On | When the vulnerability was first detected | "1 week ago", "April 15, 2025" |
+
+#### Table Features
+
+- **Sortable Columns**: Click on any column header to sort vulnerabilities
+- **Row Selection**: Select individual or multiple vulnerabilities for batch actions
+- **Pagination**: Navigate through large vulnerability sets with ease
+- **Rows Per Page**: Select display density (10, 25, 50 vulnerabilities per page)
+
+## Working with Vulnerabilities
+
+### Viewing Vulnerability Details
+
+Click on any vulnerability row to open the **Vulnerability Report Page**, which provides comprehensive information about the selected issue. This dedicated page serves as a central hub for understanding the full context of a vulnerability, tracking its lifecycle, facilitating collaboration, and managing its remediation.
+
+<img className="glass block dark:hidden rounded-xl" src="/images/csm/vuln_detail.png" alt="Vulnerability Detail View" />
+<img className="glass hidden dark:block rounded-xl" src="/images/csm/vuln_detail_dark.png" alt="Vulnerability Detail View" />
+
+#### Vulnerability Report Page Components
+
+- **Technical Description**: Detailed explanation of the vulnerability, including its cause and potential impact
+- **Steps to Reproduce**: Clear instructions for recreating the vulnerability, aiding in verification and remediation
+- **Evidence and Screenshots**: Visual documentation of the vulnerability, demonstrating its existence and severity
+- **Remediation Recommendations**: Expert guidance on how to address and resolve the security issue
+- **Activity Timeline**: Chronological record of all actions taken related to the vulnerability
+- **Comments and Collaboration**: Discussion thread for team communication about the vulnerability
+- **Status Management**: Controls to update the vulnerability's current state in the remediation lifecycle
+
+<Tip>
+Use the tabbed interface in the Vulnerability Report to navigate between different types of information without losing context of the overall issue.
+</Tip>
+
+### Managing Vulnerability Workflow
+
+1. **Assignment**: Assign vulnerabilities to team members responsible for remediation directly from the Vulnerability Report page
+2. **Status Updates**: Track progress through status changes (In Review → In Progress → Resolved)
+3. **Verification**: Request retesting of resolved vulnerabilities to confirm successful remediation
+4. **Documentation**: Add notes, upload additional evidence, or document remediation steps for team knowledge sharing
+
+## Best Practices
+
+- Regularly review "In Review" vulnerabilities to ensure timely assignment
+- Prioritize vulnerabilities based on severity and potential impact
+- Set realistic deadlines for remediation based on complexity
+- Document remediation steps for knowledge sharing and future reference
+
+<Note>
+Remember that vulnerability management is an ongoing process. Regular reviews and updates to this list ensure your organization maintains an accurate view of its security posture.
+</Note>
