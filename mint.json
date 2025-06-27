@@ -75,7 +75,7 @@
     },
     {
       "group": "Quick Links",
-      "pages": ["products/csm/index","products/csm/articles/dashboard","products/csm/articles/assessmentplanning","products/csm/articles/submit_report","products/csm/articles/list","products/csm/articles/vuln_reports","products/csm/articles/assets","products/csm/articles/report","products/csm/articles/blockers","products/csm/articles/apikey","products/csm/articles/users","products/csm/articles/profile"]
+      "pages": ["products/csm/index","products/csm/articles/dashboard","products/csm/articles/assessmentplanning","products/csm/articles/vuln_reports","products/csm/articles/submit_report","products/csm/articles/list","products/csm/articles/assets","products/csm/articles/report","products/csm/articles/blockers","products/csm/articles/apikey","products/csm/articles/users","products/csm/articles/profile"]
     },
     {
       "group": "Quick Links",
