@@ -27,29 +27,30 @@
   },
   "tabs": [
     {
-      "name": "Attack Surface Management",
-      "url": "products/asm"
-    },
-    {
       "name": "Vulnerability Management",
       "url": "products/csm"
     },
     {
-      "name": "Phishing Simulator",
-      "url": "products/ps"
+      "name": "Attack Surface Management",
+      "url": "products/asm"
+    },
+     {
+      "name": "Asset Inventory Management",
+      "url": "products/aim"
     },
     {
-      "name": "Secret Scanner",
-      "url": "products/ss"
+      "name": "API Guard",
+      "url": "products/apiguard"
     },
     {
-      "name": "VDP Management",
-      "url": "products/vdp"
+      "name": "Threat Modeler",
+      "url": "products/tm"
     },
     {
-      "name": "Employee Training Management",
-      "url": "products/etm"
+      "name": "Vulnerability Scanner",
+      "url": "products/vs"
     }
+   
   ],
   "anchors": [
     {
